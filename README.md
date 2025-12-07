@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Starting%20Dec%2021-blue?style=for-the-badge)
 ![Progress](https://img.shields.io/badge/Progress-0%2F60-red?style=for-the-badge)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 </div>
 
