@@ -34,6 +34,6 @@ We took inspiration from those jaw-dropping northern hemisphere winter nights an
 
 ✨ **Behold the magic of the Aurora Nights Theme:**
 
-![🌌 Liquid Glass Aurora Nights Theme](aurora%202.png)
+![🌌 Liquid Glass Aurora Nights Theme](Screenshot%202025-12-08%20134011.png)
 
 *Step into the enchanting world of glacial beauty where modern design meets natural wonder. This ethereal login experience brings the magic of the arctic right to your fingertips.* 🌠
