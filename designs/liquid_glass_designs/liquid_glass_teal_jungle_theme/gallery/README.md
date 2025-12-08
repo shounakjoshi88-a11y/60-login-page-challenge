@@ -27,3 +27,11 @@ The login page features a serene jungle landscape with layered silhouettes of tr
 ### Design Inspiration
 
 This design combines the trendy liquid glass morphism effect with a tranquil jungle theme, creating a unique and visually appealing login experience.
+
+## 🎨 Gallery Screenshots
+
+✨ **Preview of the stunning Liquid Glass Teal Jungle Theme login interface:**
+
+![🌴 Liquid Glass Teal Jungle Theme](Screenshot 2025-12-08 105536.png)
+
+*Immerse yourself in a serene jungle experience with the mesmerizing glass morphism effect and enchanting wildlife elements.*
