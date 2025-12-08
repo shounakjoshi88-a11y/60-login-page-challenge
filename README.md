@@ -1,167 +1,154 @@
 <div align="center">
 
-# 🚪 60 Login Page Challenge
+# 🎨 60 Login Page Challenge
 
-### *A Personal Journey Through CSS Design*
+*A Personal Journey Through CSS Design*
 
-![Status](https://img.shields.io/badge/Status-Starting%20Dec%2021-blue?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Progress-0%2F60-red?style=for-the-badge)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+[![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)]()
+[![Progress](https://img.shields.io/badge/Progress-2%2F60-red?style=for-the-badge)]()
+[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
 
 </div>
 
----
+## 💭 What's This About?
 
-## 💡 What's This About?
-
-Hey there! I'm a first-year CSE student challenging myself to create **60 unique login page designs** in about 60 days. No frameworks, no libraries—just pure HTML and CSS magic.
-
-Why login pages? They're simple enough to complete daily but complex enough to explore different design philosophies, color theories, and CSS techniques. Plus, they're practical!
-
-### 🎯 My Goals
-
-- 🎨 Master modern CSS (Flexbox, Grid, animations, glassmorphism, neumorphism)
-- ⚡ Build muscle memory through consistent daily coding
-- 🌈 Explore different design aesthetics (cyberpunk, minimalist, retro, brutalist...)
-- 📚 Create a resource others can learn from and use
-- 🚀 Prove to myself that consistency beats perfection
+Hey there! I'm a first-year CSE student challenging myself to create **60 unique login page designs** in about 60 days. No frameworks, no libraries—just pure HTML and CSS magic. Each day brings a new design concept, from glass morphism to cyberpunk aesthetics. This is my playground for exploring CSS creativity while building a solid portfolio piece! 🚀
 
 ---
 
-## 📅 Timeline
-
-**Start Date:** December 21, 2024 (right after my end-term exams!)  
-**Target:** ~1 design per day  
-**End Goal:** 60 unique, creative login pages
-
----
-
-## 🗂️ Project Structure
+## 📁 Project Structure
 
 ```
 60-login-page-challenge/
-├── index.html              # Gallery page showcasing all designs
 ├── designs/
-│   ├── 01-liquid_glass_login.html
-│   ├── 02-green_blue_gradient.html
-│   ├── 03-neon_cyberpunk_login.html
-│   └── ... (up to 60)
-└── assets/
-    ├── screenshots/        # Preview images
-    └── css/                # Shared styles (optional)
+│   └── liquid_glass_designs/
+│       ├── liquid_glass_aurora_nights_theme/
+│       │   ├── gallery/
+│       │   │   ├── README.md
+│       │   │   └── Screenshot_2025-12-08_134011.png
+│       │   ├── liquid_glass_aurora_nights_theme.html
+│       │   ├── aurora_2.png
+│       │   ├── google_logo.png
+│       │   ├── meta_logo.png
+│       │   └── vk_logo.png
+│       ├── liquid_glass_teal_jungle_theme/
+│       │   ├── gallery/
+│       │   │   ├── README.md
+│       │   │   └── Screenshot_2025-12-08_105536.png
+│       │   ├── liquid_glass_teal_jungle_theme.html
+│       │   └── [logo files]
+│       ├── liquid_glass_cosmic_space_theme/
+│       ├── liquid_glass_desert_mirage_theme/
+│       ├── liquid_glass_forest_mystique_theme/
+│       ├── liquid_glass_minimalist_serene_theme/
+│       ├── liquid_glass_ocean_deep_theme/
+│       ├── liquid_glass_sunset_horizon_theme/
+│       └── liquid_glass_urban_neon_theme/
+└── README.md
 ```
 
 ---
 
-## 🎨 Design Styles I'll Explore
+## 🎯 Design Categories & Themes
 
-- 🌊 **Glassmorphism** - Frosted glass effects
-- 🔮 **Neumorphism** - Soft UI with subtle shadows
-- 🌃 **Cyberpunk/Neon** - Vibrant colors and glowing effects
-- 🎭 **Dark Mode** - Sleek and modern dark themes
-- 🌸 **Pastel Minimalism** - Clean and simple aesthetics
-- 🎪 **Gradients** - Smooth color transitions
-- 🏛️ **Brutalism** - Raw and bold designs
-- 🌌 **Space/Cosmic** - Stars, planets, and galaxies
-- 🍃 **Nature-inspired** - Organic shapes and earthy tones
-- ⚡ **Animated** - Motion and interactive elements
+Each design explores different CSS concepts and aesthetic styles:
+
+### 🌌 **Liquid Glass Series** (Currently Working)
+- ✨ Aurora Nights - Northern lights with glass morphism
+- 🌴 Teal Jungle - Tropical paradise vibe
+- 🚀 Cosmic Space - Stars and galaxies
+- 🏜️ Desert Mirage - Sandy dunes aesthetic
+- 🌲 Forest Mystique - Dark woodland atmosphere
+- 🧘 Minimalist Serene - Clean and peaceful
+- 🌊 Ocean Deep - Deep blue waters
+- 🌅 Sunset Horizon - Golden hour magic
+- 🌃 Urban Neon - Cyberpunk vibes
 
 ---
 
 ## 📊 Progress Tracker
 
-### Month 1: Foundations (Designs 1-20)
-| # | Design Name | Date | Status |
-|---|-------------|------|--------|
-| 01 | Liquid Glass Login | - | ⏳ Pending |
-| 02 | Green-Blue Gradient | - | ⏳ Pending |
-| 03 | Neon Cyberpunk | - | ⏳ Pending |
-| 04 | Soft Pastel Minimal | - | ⏳ Pending |
-| 05 | Dark Mode Card | - | ⏳ Pending |
-| ... | ... | ... | ... |
+### 🏛️ Series: Liquid Glass Designs
 
-*I'll update this table as I complete each design!*
+| # | Design Name | Gallery | Status | Created | # of Designs |
+|---|---|---|---|---|---|
+| 01 | Aurora Nights 🌌 | [View](./designs/liquid_glass_designs/liquid_glass_aurora_nights_theme/gallery) | ✅ Complete | 2025-12-08 | 1 |
+| 02 | Teal Jungle 🌴 | [View](./designs/liquid_glass_designs/liquid_glass_teal_jungle_theme/gallery) | ✅ Complete | 2025-12-08 | 1 |
+| 03 | Cosmic Space 🚀 | Coming Soon | ⏳ In Progress | TBD | 0 |
+| 04 | Desert Mirage 🏜 | Coming Soon | 📋 Planned | TBD | 0 |
+| 05 | Forest Mystique 🌲 | Coming Soon | 📋 Planned | TBD | 0 |
+| 06 | Minimalist Serene 🧘 | Coming Soon | 📋 Planned | TBD | 0 |
+| 07 | Ocean Deep 🌊 | Coming Soon | 📋 Planned | TBD | 0 |
+| 08 | Sunset Horizon 🌅 | Coming Soon | 📋 Planned | TBD | 0 |
+| 09 | Urban Neon 🌃 | Coming Soon | 📋 Planned | TBD | 0 |
+| ... | ... | ... | ... | ... | 0 |
+| **TOTAL** | **Liquid Glass Series** | - | - | - | **2/60** |
 
----
-
-## 🌐 Live Demo
-
-🚧 **Coming Soon!** I'll deploy a gallery page on GitHub Pages once I have a few designs ready.
-
----
-
-## 🛠️ Tech Stack
-
-- **HTML5** - Semantic structure
-- **CSS3** - All the styling magic
-  - Flexbox & Grid layouts
-  - CSS animations & transitions
-  - Custom properties (CSS variables)
-  - Modern effects (blur, gradients, shadows)
-- **No JavaScript** (keeping it pure CSS for now!)
+### 📈 Overall Progress
+- **Completed**: 2 designs ✅
+- **In Development**: 0 designs 🔨
+- **Planned**: 58 designs 📋
+- **Total**: 2/60 (3.3% complete)
 
 ---
 
-## 💭 Why I'm Doing This
+## 🔧 Tech Stack
 
-As a first-year student at Ramdeobaba University, I'm passionate about web development and design. I've been working on projects like:
-- 🔥 c-practice repo (70+ C programs)
-- 🎨 html-css-projects (web dev journey)
-- 🤖 awesome-projects (AI/ML experiments)
-
-This challenge is my way of:
-1. Building a standout portfolio piece
-2. Avoiding the "useless PR" trap (thanks Hitesh Choudhary for the wake-up call!)
-3. Creating something genuinely useful for the community
-4. Pushing my creative and technical boundaries
+- **Markup**: HTML5
+- **Styling**: Pure CSS3 (No preprocessing)
+- **Features**: 
+  - Glass Morphism Effects
+  - Smooth Animations & Transitions
+  - Responsive Design Principles
+  - Social Login Integration
+  - Modern UI/UX Patterns
 
 ---
 
-## 🤝 For Fellow Developers
+## 🌟 Learning Outcomes
 
-### Can I Use These Designs?
-
-**Absolutely!** Feel free to:
-- ✅ Use them in your projects
-- ✅ Modify and adapt them
-- ✅ Learn from the code
-- ✅ Share with others
-
-All I ask is:
-- 🌟 Star this repo if you find it helpful
-- 💬 Share your creations with me
-- 🙌 Give credit where it's due
-
-### Want to Contribute?
-
-While this is a personal challenge, I'd love to hear:
-- 💡 Design ideas or themes I should try
-- 🐛 Bug reports or improvements
-- 📸 Screenshots of how you used these designs
+This challenge is helping me master:
+- ✨ Advanced CSS techniques (backdrop filters, blend modes, transforms)
+- 🎨 Design principles and aesthetic consistency
+- 📱 Responsive layout patterns
+- 🚀 Performance optimization
+- 💡 Creative problem-solving
+- 📚 Portfolio building
 
 ---
 
-## 📫 Connect With Me
+## 📟 Gallery Features
 
-- **GitHub:** [@shounakjoshi88-a11y](https://github.com/shounakjoshi88-a11y)
-- **Location:** Nagpur, India 📍
-- **Currently:** BTech CSE (AI & ML) @ RCOEM, 1st Year
+Each design comes with:
+- 🗯 **Gallery Preview** - Screenshot showcase
+- 📄 **Detailed README** - Theme description & features  
+- 🎯 **Design Insights** - What makes it special
+- 🔗 **Live Preview** - Fully functional HTML files
 
-Let's build something amazing together! 🚀
+---
+
+## 🚀 Getting Started
+
+1. **Browse the designs**: Check out the `designs/liquid_glass_designs/` folder
+2. **View galleries**: Each design has a gallery folder with preview screenshots
+3. **Open the HTML files**: Right-click any `.html` file and open with your browser
+4. **Explore the code**: Pure HTML & CSS—no build process needed!
+
+---
+
+## 📄 Notes & Future Plans
+
+- Will continue adding designs beyond the initial 60
+- Planning to explore more design series (Dark Mode, Minimalist, Animated, etc.)
+- Each design demonstrates different CSS capabilities
+- Gallery sections help visualize the designs in action
+- Every design gets a creative README with emojis and humanized descriptions
 
 ---
 
 <div align="center">
 
-### 🔥 The Journey Begins December 21st!
-
-*"Consistency beats perfection. One login page at a time."*
-
-**Day 0/60** | **Designs: 0/60** | **Lines of CSS: TBD**
-
----
-
-⭐ Star this repo to follow my journey! ⭐
+**Made with ❤ and lots of CSS** | 🎨 CSE Student | 🚀 Self-directed Learning
 
 </div>
