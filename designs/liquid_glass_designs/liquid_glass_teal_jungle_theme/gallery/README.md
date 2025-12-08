@@ -32,6 +32,6 @@ This design combines the trendy liquid glass morphism effect with a tranquil jun
 
 ✨ **Preview of the stunning Liquid Glass Teal Jungle Theme login interface:**
 
-![🌴 Liquid Glass Teal Jungle Theme](Screenshot 2025-12-08 105536.png)
+![🌴 Liquid Glass Teal Jungle Theme](Screenshot%202025-12-08%20105536.png)
 
 *Immerse yourself in a serene jungle experience with the mesmerizing glass morphism effect and enchanting wildlife elements.*
