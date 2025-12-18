@@ -118,7 +118,7 @@ We have two themes in our collection. Here's how they compare:
 
 **Behold the magic of the Cosmic Portal:**
 
-![Cosmic Portal Login Theme](./cosmic_portal_final.png)
+![Cosmic Portal Login Theme](./Screenshot%202025-12-19%20003638.png)
 
 *Step into a world where authentication becomes an adventure. Where every login is a journey through the stars. Where technology meets wonder.* ✨🚀
 
