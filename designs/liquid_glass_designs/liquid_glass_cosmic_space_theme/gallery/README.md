@@ -1,8 +1,8 @@
-# 🚀✨ Liquid Glass Cosmic Portal - Gallery
+dme# 🚀✨ Liquid Glass Cosmic Portal - Gallery
 
 ## 🎭 What's This About?
 
-Welcome to the **Cosmic Portal** gallery! 🌌 This is where we showcase the most mind-bending, neon-glowing, astronaut-powered login experience you've ever seen.
+Welcome to the **Cosmic Portal** gallery! 🌌 This is where I showcase  neon-glowing, astronaut-powered login experience.
 
 Imagine this: You're floating through a wormhole. Stars are twinkling. A nebula is dancing in impossible colors. And there's an astronaut vibing with the cosmos, beckoning you through a dimensional gateway. That's not sci-fi—that's your login page now! 🧑‍🚀✨
 
