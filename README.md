@@ -75,7 +75,8 @@ Each design explores different CSS concepts and aesthetic styles:
 |---|---|---|---|---|---|
 | 01 | Aurora Nights 🌌 | [View](./designs/liquid_glass_designs/liquid_glass_aurora_nights_theme/gallery) | ✅ Complete | 2025-12-08 | 1 |
 | 02 | Teal Jungle 🌴 | [View](./designs/liquid_glass_designs/liquid_glass_teal_jungle_theme/gallery) | ✅ Complete | 2025-12-08 | 1 |
-| 03 | Cosmic Space 🚀 | [View](/designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) | ✅ Complete | 2025-12-19 | 1 || 04 | Desert Mirage 🏜 | Coming Soon | 📋 Planned | TBD | 0 |
+| 03 | Cosmic Space 🚀 | [View](/designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |      
+| 04 | Desert Mirage 🏜 | Coming Soon | 📋 Planned | TBD | 0 |
 | 05 | Forest Mystique 🌲 | Coming Soon | 📋 Planned | TBD | 0 |
 | 06 | Minimalist Serene 🧘 | Coming Soon | 📋 Planned | TBD | 0 |
 | 07 | Ocean Deep 🌊 | Coming Soon | 📋 Planned | TBD | 0 |
