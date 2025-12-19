@@ -140,8 +140,8 @@ No matter your screen size, the magic remains. 📲✨
 ## 🌟 Files in This Gallery
 
 - `README.md` ← You are here!
-- `screenshot-light-mode.png` - The tiger's domain (golden hour)
-- `screenshot-dark-mode.png` - The panther's realm (moonlit night)
+- `Screenshot 2025-12-19 183058.png` - The tiger's domain (golden hour)
+- `Screenshot 2025-12-19 183111.png` - The panther's realm (moonlit night)
 
 ---
 
