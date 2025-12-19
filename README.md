@@ -25,17 +25,14 @@ Hey there! I'm a first-year CSE student challenging myself to create **60 unique
 │       ├── liquid_glass_aurora_nights_theme/
 │       │   ├── gallery/
 │       │   │   ├── README.md
-│       │   │   └── Screenshot_2025-12-08_134011.png
+│       │   │   └── Screenshot images
 │       │   ├── index.html
 │       │   ├── styles.css
-│       │   ├── aurora_2.png
-│       │   ├── google_logo.png
-│       │   ├── meta_logo.png
-│       │   └── vk_logo.png
+│       │   └── [logo files]
 │       ├── liquid_glass_teal_jungle_theme/
 │       │   ├── gallery/
 │       │   │   ├── README.md
-│       │   │   └── Screenshot_2025-12-08_105536.png
+│       │   │   └── Screenshot images
 │       │   ├── index.html
 │       │   ├── styles.css
 │       │   └── [logo files]
@@ -44,13 +41,15 @@ Hey there! I'm a first-year CSE student challenging myself to create **60 unique
 │       │   │   ├── README.md
 │       │   │   └── Screenshot images
 │       │   ├── index.html
-│       │   └── styles.css
+│       │   ├── styles.css
+│       │   └── [logo files]
 │       ├── liquid_glass_desert_mirage_theme/
 │       │   ├── gallery/
 │       │   │   ├── README.md
 │       │   │   └── Screenshot images (day & night modes)
 │       │   ├── index.html
-│       │   └── styles.css
+│       │   ├── styles.css
+│       │   └── [logo files]
 │       ├── liquid_glass_forest_mystique_theme/
 │       │   ├── gallery/
 │       │   ├── index.html
@@ -162,7 +161,6 @@ Each design comes with:
 - Planning to explore more design series (Dark Mode, Minimalist, Animated, etc.)
 - Each design demonstrates different CSS capabilities
 - Gallery sections help visualize the designs in action
-- Every design gets a creative README with emojis and humanized descriptions
 
 ---
 
