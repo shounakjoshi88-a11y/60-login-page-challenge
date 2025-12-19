@@ -62,9 +62,8 @@ Your login experience adapts to your mood. Light mode when you're ready to conqu
 
 62
 ### 🌙 Dark Mode: Where the Panther Walks
-(Panther)](Screenshot%202025-12-19%20183111.png)
+![🐆 Forest Mystique - Dark Mode (Panther)](Screenshot%202025-12-19%20183111.png)
 
-[🐆 Forest Mystique - Dark Mode (Panther)](Screenshot 2025-12-19 183111.png)
 
 *Venture into moonlit mystery. Bioluminescent mushrooms glow cyan and purple. The panther's eyes pierce the darkness with supernatural light. This is where secrets whisper.* 🤫
 
