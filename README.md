@@ -5,8 +5,7 @@
 *A Personal Journey Through CSS Design*
 
 [![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)]()
-[![Progress](https://img.shields.io/badge/Progress-2%2F60-red?style=for-the-badge)]()
-[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
+[![Progress](https://img.shields.io/badge/Progress-4%2F9-red?style=for-the-badge)]()[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
 
 </div>
@@ -27,7 +26,8 @@ Hey there! I'm a first-year CSE student challenging myself to create **60 unique
 │       │   ├── gallery/
 │       │   │   ├── README.md
 │       │   │   └── Screenshot_2025-12-08_134011.png
-│       │   ├── liquid_glass_aurora_nights_theme.html
+│       │   ├── index.html
+│       │   ├── styles.css
 │       │   ├── aurora_2.png
 │       │   ├── google_logo.png
 │       │   ├── meta_logo.png
@@ -36,21 +36,41 @@ Hey there! I'm a first-year CSE student challenging myself to create **60 unique
 │       │   ├── gallery/
 │       │   │   ├── README.md
 │       │   │   └── Screenshot_2025-12-08_105536.png
-│       │   ├── liquid_glass_teal_jungle_theme.html
+│       │   ├── index.html
+│       │   ├── styles.css
 │       │   └── [logo files]
 │       ├── liquid_glass_cosmic_space_theme/
-├── gallery/
-│   ├── README.md
-│   └── Screenshot images (day & night modes)
+│       │   ├── gallery/
+│       │   │   ├── README.md
+│       │   │   └── Screenshot images
+│       │   ├── index.html
+│       │   └── styles.css
 │       ├── liquid_glass_desert_mirage_theme/
-├── gallery/
-│   ├── README.md
-│   └── Screenshot images (day & night modes)
+│       │   ├── gallery/
+│       │   │   ├── README.md
+│       │   │   └── Screenshot images (day & night modes)
+│       │   ├── index.html
+│       │   └── styles.css
 │       ├── liquid_glass_forest_mystique_theme/
+│       │   ├── gallery/
+│       │   ├── index.html
+│       │   └── styles.css
 │       ├── liquid_glass_minimalist_serene_theme/
+│       │   ├── gallery/
+│       │   ├── index.html
+│       │   └── styles.css
 │       ├── liquid_glass_ocean_deep_theme/
+│       │   ├── gallery/
+│       │   ├── index.html
+│       │   └── styles.css
 │       ├── liquid_glass_sunset_horizon_theme/
+│       │   ├── gallery/
+│       │   ├── index.html
+│       │   └── styles.css
 │       └── liquid_glass_urban_neon_theme/
+│           ├── gallery/
+│           ├── index.html
+│           └── styles.css
 └── README.md
 ```
 
@@ -82,20 +102,16 @@ Each design explores different CSS concepts and aesthetic styles:
 | 01 | Aurora Nights 🌌 | [View](./designs/liquid_glass_designs/liquid_glass_aurora_nights_theme/gallery) | ✅ Complete | 2025-12-08 | 1 |
 | 02 | Teal Jungle 🌴 | [View](./designs/liquid_glass_designs/liquid_glass_teal_jungle_theme/gallery) | ✅ Complete | 2025-12-08 | 1 |
 | 03 | Cosmic Space 🚀 | [View](/designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |      
-| 04 | Desert Mirage 🏜 | Coming Soon | 📋 Planned | TBD | 0 |
+| 04 | Desert Mirage 🏜 | [View](./designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |   
 | 05 | Forest Mystique 🌲 | Coming Soon | 📋 Planned | TBD | 0 |
 | 06 | Minimalist Serene 🧘 | Coming Soon | 📋 Planned | TBD | 0 |
 | 07 | Ocean Deep 🌊 | Coming Soon | 📋 Planned | TBD | 0 |
 | 08 | Sunset Horizon 🌅 | Coming Soon | 📋 Planned | TBD | 0 |
 | 09 | Urban Neon 🌃 | Coming Soon | 📋 Planned | TBD | 0 |
-| **TOTAL** | **Liquid Glass Series** | - | - | - | **3/9** |
+| **TOTAL** | **Liquid Glass Series** | - | - | - | **4/9** |
 
 ### 📈 Overall Progress
-- **Completed**: 3 designs ✅- **In Development**: 0 designs 🔨
-- **Planned**: 58 designs 📋
-- **Total**: 3/60 (5% complete)
----
-
+- **Completed**: 4 designs ✅ - **Planned**: 5 designs 📋- **Total**: 4/9 (44% complete)
 ## 🔧 Tech Stack
 
 - **Markup**: HTML5
