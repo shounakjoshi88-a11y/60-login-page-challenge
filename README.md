@@ -39,7 +39,13 @@ Hey there! I'm a first-year CSE student challenging myself to create **60 unique
 │       │   ├── liquid_glass_teal_jungle_theme.html
 │       │   └── [logo files]
 │       ├── liquid_glass_cosmic_space_theme/
+├── gallery/
+│   ├── README.md
+│   └── Screenshot images (day & night modes)
 │       ├── liquid_glass_desert_mirage_theme/
+├── gallery/
+│   ├── README.md
+│   └── Screenshot images (day & night modes)
 │       ├── liquid_glass_forest_mystique_theme/
 │       ├── liquid_glass_minimalist_serene_theme/
 │       ├── liquid_glass_ocean_deep_theme/
