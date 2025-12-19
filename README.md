@@ -5,7 +5,7 @@
 *A Personal Journey Through CSS Design*
 
 [![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)]()
-[![Progress](https://img.shields.io/badge/Progress-4%2F9-red?style=for-the-badge)]()[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
+[![Progress](https://img.shields.io/badge/Progress-4%2F60-red?style=for-the-badge)]()[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
 
 </div>
@@ -111,7 +111,7 @@ Each design explores different CSS concepts and aesthetic styles:
 | **TOTAL** | **Liquid Glass Series** | - | - | - | **4/9** |
 
 ### 📈 Overall Progress
-- **Completed**: 4 designs ✅ - **Planned**: 5 designs 📋- **Total**: 4/9 (44% complete)
+- **Completed**: 4 Liquid glass designs ✅ - **Planned**: 5 designs 📋- **Total**: 4/9 (44% complete)
 ## 🔧 Tech Stack
 
 - **Markup**: HTML5
