@@ -52,6 +52,8 @@ Hey there! I'm a first-year CSE student challenging myself to create **60 unique
 │       │   └── [logo files]
 │       ├── liquid_glass_forest_mystique_theme/
 │       │   ├── gallery/
+│       │   │   └──  README.md
+│       │   ├── [logo files]
 │       │   ├── index.html
 │       │   └── styles.css
 │       ├── liquid_glass_minimalist_serene_theme/
@@ -102,7 +104,7 @@ Each design explores different CSS concepts and aesthetic styles:
 | 02 | Teal Jungle 🌴 | [View](./designs/liquid_glass_designs/liquid_glass_teal_jungle_theme/gallery) | ✅ Complete | 2025-12-08 | 1 |
 | 03 | Cosmic Space 🚀 | [View](/designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |      
 | 04 | Desert Mirage 🏜 | [View](./designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |   
-| 05 | Forest Mystique 🌲 | Coming Soon | 📋 Planned | TBD | 0 |
+| 05 | Forest Mystique 🌲 | [View](/designs/liquid_glass_designs/liquid_glass_forest_mystique_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |
 | 06 | Minimalist Serene 🧘 | Coming Soon | 📋 Planned | TBD | 0 |
 | 07 | Ocean Deep 🌊 | Coming Soon | 📋 Planned | TBD | 0 |
 | 08 | Sunset Horizon 🌅 | Coming Soon | 📋 Planned | TBD | 0 |
@@ -110,8 +112,7 @@ Each design explores different CSS concepts and aesthetic styles:
 | **TOTAL** | **Liquid Glass Series** | - | - | - | **4/9** |
 
 ### 📈 Overall Progress
-- **Completed**: 4 Liquid glass designs ✅ - **Planned**: 5 designs 📋- **Total**: 4/9 (44% complete)
-## 🔧 Tech Stack
+- **Completed**: 5 Liquid glass designs ✅ - **Planned**: 4 designs 📋 - **Total**: 5/9 (55% complete)## 🔧 Tech Stack
 
 - **Markup**: HTML5
 - **Styling**: Pure CSS3 (No preprocessing)
