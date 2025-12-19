@@ -9,12 +9,12 @@
 ### ☀️ Light Mode: Daytime Desert Magic
 *Warm, golden, and absolutely inviting. Like sipping a cold drink at an oasis!*
 
-![Mirage Portal - Light Mode](day-preview.png)
+![Mirage Portal - Light Mode](Screenshot%202025-12-19%20122849.png)
 
 ### 🌙 Dark Mode: Nighttime Mystique  
 *Cool, dreamy, and perfect for those late-night login sessions. Starry skies included!*
 
-![Mirage Portal - Dark Mode](night-preview.png)
+![Mirage Portal - Dark Mode](Screenshot%202025-12-19%20122906.png)
 
 ---
 
@@ -51,9 +51,9 @@ It's a complete *vibe*. An experience. A journey into a desert oasis that tells 
 **How It Feels:**
 - Inviting and friendly (not intimidating)
 - Great visibility even in bright sunlight
-- That golden hour vibe = trust & comfort 🌅
+- That golden hour vibe = trust and comfort 🌅
 
-### 🌙 Dark Mode = Stargaze & Chill
+### 🌙 Dark Mode = Stargaze and Chill
 
 **The Plot Twist:**
 - Entire background transforms to nighttime 🌟
@@ -70,27 +70,27 @@ It's a complete *vibe*. An experience. A journey into a desert oasis that tells 
 
 ---
 
-## \ud83d\udd13 The Cool Features (Seriously Cool) \ud83d\ude0e
+## 🔓 The Cool Features (Seriously Cool) 😎
 
-### \ud83d\udc41\ufe0f Password Peek Feature
+### 👁️ Password Peek Feature
 - Click the eye icon to show/hide your password
-- Finally, you can see what you typed! (radical concept, I know \ud83d\ude9c)
+- Finally, you can see what you typed! (radical concept, I know 🚜)
 - Smooth transitions that don't feel glitchy
 
-### \ud83c\udf1c Toggle Your Vibe
+### 🌜 Toggle Your Vibe
 - Click "Dark mode" in the top-right corner
-- Watch the magic happen (seriously, it's *smooth*) \ud83c\udf1f
+- Watch the magic happen (seriously, it's *smooth*) 🌟
 - No page refresh, no nonsense
 - Just vibes switching from day to night
 
-### \ud83c\udfab Form Interactions (The Details Matter)
+### 🎫 Form Interactions (The Details Matter)
 
 **Floating Labels** - Shhhhh, watch them dance!
 - Labels glide up as you type
 - No awkward overlap nonsense
 
 **Focus Glow** - When you click an input:
-- Cyan glow effect (the signature mirage color) \ud83d\ude0d
+- Cyan glow effect (the signature mirage color) 😍
 - Gradient line animates underneath
 - You KNOW you're in the right place
 
@@ -100,64 +100,64 @@ It's a complete *vibe*. An experience. A journey into a desert oasis that tells 
 - Gradient background that matches the theme
 
 **Button That Pops** - "ENTER OASIS"
-- Hover = slight lift + enhanced glow (elevation, baby! \u2705)
+- Hover = slight lift + enhanced glow (elevation, baby! ✅)
 - Click = satisfying press-down feel
-- Not just a button, an *experience* \ud83c\udf86
+- Not just a button, an *experience* 🎆
 
 ---
 
-## \ud83c\udfa8 Design Ratings: The Verdict
+## 🎨 Design Ratings: The Verdict
 
 | Aspect | How Good? | Real Talk |
 |--------|----------|----------|
-| **Visual Design** | \u2b50\u2b50\u2b50\u2b50\u2b50 | Literally stunning. No cap. |
-| **User Experience** | \u2b50\u2b50\u2b50\u2b50\u2b50 | Intuitive AF. Your grandma could use it. |
-| **Theme System** | \u2b50\u2b50\u2b50\u2b50\u2b50 | Light to dark? *Chef's kiss* transition |
-| **Accessibility** | \u2b50\u2b50\u2b50\u2b50\u2606 | Solid. Could use more aria labels though |
-| **Performance** | \u2b50\u2b50\u2b50\u2b50\u2b50 | Buttery smooth. No lag. Period. |
-| **Overall** | **9.2/10** | **This is portfolio gold.** \ud83e\udd1f |
+| **Visual Design** | ⭐⭐⭐⭐⭐ | Literally stunning. No cap. |
+| **User Experience** | ⭐⭐⭐⭐⭐ | Intuitive AF. Your grandma could use it. |
+| **Theme System** | ⭐⭐⭐⭐⭐ | Light to dark? *Chef's kiss* transition |
+| **Accessibility** | ⭐⭐⭐⭐☆ | Solid. Could use more aria labels though |
+| **Performance** | ⭐⭐⭐⭐⭐ | Buttery smooth. No lag. Period. |
+| **Overall** | **9.2/10** | **This is portfolio gold.** 🤟 |
 
 ---
 
-## \ud83d\udca1 Why This Actually Slaps
+## 💡 Why This Actually Slaps
 
-1. **Everything Tells a Story** - Desert theme isn't random. It's *intentional*. Every element reinforces it. \ud83c\udf05
+1. **Everything Tells a Story** - Desert theme isn't random. It's *intentional*. Every element reinforces it. 🌅
 
-2. **Dark Mode Isn't Just Lazy** - It's not just the same design with inverted colors. It's a complete atmospheric transformation. Starry sky, moon, cool vibes. *That's* how you do dark mode. \ud83c\udf1f
+2. **Dark Mode Isn't Just Lazy** - It's not just the same design with inverted colors. It's a complete atmospheric transformation. Starry sky, moon, cool vibes. *That's* how you do dark mode. 🌟
 
-3. **Micro-interactions = Delight** - Buttons have hover effects. Inputs have focus glows. Forms respond to your touch. It *feels* premium. \u2728
+3. **Micro-interactions = Delight** - Buttons have hover effects. Inputs have focus glows. Forms respond to your touch. It *feels* premium. ✨
 
-4. **Polish Everywhere** - Every single hover state, focus state, and transition has been thought through. This isn't a side project; it's professional work. \ud83d\udcaa
+4. **Polish Everywhere** - Every single hover state, focus state, and transition has been thought through. This isn't a side project; it's professional work. 💪
 
-5. **Accessibility Matters** - ARIA labels, semantic HTML, keyboard navigation. You built this for real humans, not just for screenshots. \u2705
+5. **Accessibility Matters** - ARIA labels, semantic HTML, keyboard navigation. You built this for real humans, not just for screenshots. ✅
 
-6. **Modern Design Done Right** - Glassmorphism is trendy, but it's usually overdone. This? This nails it. Elegant, not overdone. \ud83c\udf1f
+6. **Modern Design Done Right** - Glassmorphism is trendy, but it's usually overdone. This? This nails it. Elegant, not overdone. 🌟
 
 ---
 
-## \ud83d\ude80 How to Use It (Super Simple)
+## 🚀 How to Use It (Super Simple)
 
 1. Open `liquid_glass_desert_mirage_theme.html` in your browser
-2. Boom. Desert vibes. Daylight mode activated. \u2600\ufe0f
+2. Boom. Desert vibes. Daylight mode activated. ☀️
 3. Click "Dark mode" toggle (top right)
-4. Watch the starry night appear \ud83c\udf19
+4. Watch the starry night appear 🌙
 5. Play around! Try:
-   - Typing in the email field (watch the label float) \ud83d\udcd1
-   - Clicking the password visibility icon \ud83d\udc41\ufe0f
-   - Hovering over buttons (feel that elevation) \ud83d\ude80
-   - Checking the "Remember me" box (yes, there's an animation) \ud83c\udfad
+   - Typing in the email field (watch the label float) 📑
+   - Clicking the password visibility icon 👁️
+   - Hovering over buttons (feel that elevation) 🚀
+   - Checking the "Remember me" box (yes, there's an animation) 🎭
 
 ---
 
-## \ud83d\udcf1 Responsive? Bet.
+## 📱 Responsive? Bet.
 
-- **Desktop** (900px+): Full glory. Quote on left, login card on right. \ud83d\udda5\ufe0f
-- **Tablet** (768px - 900px): Smart spacing adjustments. Still looks dope. \ud83d\udcf2
-- **Mobile** (< 768px): Card centered, full-width love. No compromise on vibes. \ud83d\udcf3
+- **Desktop** (900px+): Full glory. Quote on left, login card on right. 🖥️
+- **Tablet** (768px - 900px): Smart spacing adjustments. Still looks dope. 📲
+- **Mobile** (< 768px): Card centered, full-width love. No compromise on vibes. 📳
 
 ---
 
-## \ud83d\udcd1 What You're Looking At (Technically)
+## 📑 What You're Looking At (Technically)
 
 This login portal demonstrates mastery of:
 - **Advanced CSS** - Glassmorphism, gradients, animations that don't suck
@@ -167,16 +167,16 @@ This login portal demonstrates mastery of:
 - **Form UX** - Floating labels, clear feedback, accessibility in mind
 - **Accessibility** - ARIA labels, semantic HTML, real keyboard support
 - **Visual Hierarchy** - You know what to click, where to type, what matters
-- **Color Psychology** - Warm = comfort, cool = focus. It's science. \ud83e\uddf2
+- **Color Psychology** - Warm = comfort, cool = focus. It's science. 🧲
 
 ---
 
 ## \ud83d\udcdd Files in This Gallery
 
 gallery/
-\u251c\u2500\u2500 README.md \u2190 (You are here!) \ud83d\udd0e
-\u251c\u2500\u2500 day-preview.png (Light mode. Sunny vibes.)
-\u2514\u2500\u2500 night-preview.png (Dark mode. Starry magic.)
+\u251c\u2500\u2500 README.md (You are here!) \ud83d\udd0e
+\u251c\u2500\u2500 Screenshot 2025-12-19 122849.png (Light mode. Sunny vibes.)
+\u2514\u2500\u2500 Screenshot 2025-12-19 122906.png (Dark mode. Starry magic.)
 
 ---
 
