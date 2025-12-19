@@ -56,13 +56,13 @@ Your login experience adapts to your mood. Light mode when you're ready to conqu
 
 ### ☀️ Light Mode: Where the Tiger Roams
 
-![🐯 Forest Mystique - Light Mode (Tiger)](Screenshot%202025-12-19%20183058.png)
+![🐯 Forest Mystique - Light Mode (Tiger)](Screenshot%202025-12-19%20204414.png)
 
 *Step into golden-hour magic. The forest glows with warmth and welcome. The tiger watches over your journey with piercing eyes, embodying strength and majesty.*
 
 62
 ### 🌙 Dark Mode: Where the Panther Walks
-![🐆 Forest Mystique - Dark Mode (Panther)](Screenshot%202025-12-19%20183111.png)
+![🐆 Forest Mystique - Dark Mode (Panther)](Screenshot%202025-12-19%20204434.png)
 
 
 *Venture into moonlit mystery. Bioluminescent mushrooms glow cyan and purple. The panther's eyes pierce the darkness with supernatural light. This is where secrets whisper.* 🤫
