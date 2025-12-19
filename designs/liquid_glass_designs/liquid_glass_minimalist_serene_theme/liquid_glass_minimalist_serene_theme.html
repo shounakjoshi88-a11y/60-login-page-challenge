@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>Liquid Glass Minimalist Serene Theme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="liquid_glass_minimalist_serene_theme.css" />
+</head>
+<body>
+  <!-- Background -->
+  <div class="bg-layer"></div>
+
+  <!-- Top bar with quote and toggle -->
+  <header class="top-bar">
+    <div class="brand">
+      <span class="brand-name">
+        <span class="quote-mark">“</span>
+        <span class="quote-main">Even the quietest nights</span>
+        <span class="quote-sub">lead to brighter days.</span>
+        <span class="quote-mark">”</span>
+      </span>
+    </div>
+
+    <div class="theme-toggle">
+      <span class="toggle-label">Day</span>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label">Night</span>
+    </div>
+  </header>
+
+  <!-- Centered liquid-glass card -->
+  <main class="main-wrapper">
+    <section class="glass-card">
+      <div class="card-header">
+        <h1>Welcome back</h1>
+        <p>Sign in to continue</p>
+      </div>
+
+      <form class="login-form" id="loginForm" autocomplete="off" novalidate>
+        <!-- Email with static label above -->
+        <div class="input-group field">
+          <label class="field-label" for="email">Email</label>
+          <div class="field-inner">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="off"
+              required
+              placeholder="you@example.com"
+            />
+          </div>
+          <span class="error-message hidden" id="email-error">
+            Please enter a valid email
+          </span>
+        </div>
+
+        <!-- Password with static label + custom eye icon -->
+        <div class="input-group field password-group">
+          <label class="field-label" for="password">Password</label>
+          <div class="field-inner">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="new-password"
+              required
+              placeholder="Enter your password"
+            />
+            <button
+              type="button"
+              class="toggle-password"
+              id="togglePassword"
+              aria-label="Show or hide password"
+            >
+              <span class="eye-icon">
+                <span class="eye-line"></span>
+                <span class="eye-dot"></span>
+              </span>
+            </button>
+          </div>
+          <span class="error-message hidden" id="password-error">
+            Password must be at least 6 characters
+          </span>
+        </div>
+
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" id="rememberMe" />
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <!-- Button with simple loading state -->
+        <button type="submit" class="primary-btn" id="loginBtn">
+          <span class="button-inner">
+            <span class="button-text">Log in</span>
+            <span class="spinner hidden">⏳</span>
+          </span>
+        </button>
+      </form>
+
+      <div class="divider">
+        <span>or continue with</span>
+      </div>
+
+      <div class="social-row">
+        <button class="social-btn" type="button" aria-label="Sign in with Google">
+          <img src="google_logo.png" alt="Google" />
+        </button>
+        <button class="social-btn" type="button" aria-label="Sign in with Meta">
+          <img src="meta_logo.png" alt="Meta" />
+        </button>
+        <button class="social-btn" type="button" aria-label="Sign in with VK">
+          <img src="vk_logo.png" alt="VK" />
+        </button>
+      </div>
+
+      <div class="card-footer">
+        <span>Don’t have an account?</span>
+        <a href="#">Sign up</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    /* ---------- Theme toggle with saved preference ---------- */
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const THEME_KEY = 'serene-theme';
+
+    (function initTheme() {
+      const saved = localStorage.getItem(THEME_KEY);
+      if (saved) {
+        root.setAttribute('data-theme', saved);
+        themeToggle.checked = saved === 'dark';
+      } else {
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const initial = prefersDark ? 'dark' : 'light';
+        root.setAttribute('data-theme', initial);
+        themeToggle.checked = prefersDark;
+      }
+    })();
+
+    themeToggle.addEventListener('change', () => {
+      const theme = themeToggle.checked ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+      localStorage.setItem(THEME_KEY, theme);
+    });
+
+    /* ---------- Validation helpers ---------- */
+    function setFieldError(id, message) {
+      const input = document.getElementById(id);
+      const group = input.closest('.field');
+      const error = group.querySelector('.error-message');
+      input.classList.add('error');
+      if (error) {
+        error.textContent = message;
+        error.classList.remove('hidden');
+      }
+    }
+
+    function setFieldValid(id) {
+      const input = document.getElementById(id);
+      const group = input.closest('.field');
+      const error = group.querySelector('.error-message');
+      input.classList.remove('error');
+      if (error) error.classList.add('hidden');
+    }
+
+    function clearAllErrors() {
+      document.querySelectorAll('.field input').forEach((inp) =>
+        inp.classList.remove('error')
+      );
+      document
+        .querySelectorAll('.error-message')
+        .forEach((msg) => msg.classList.add('hidden'));
+    }
+
+    /* ---------- Remember me ---------- */
+    const REMEMBER_KEY = 'serene-remember-email';
+
+    function rememberUser() {
+      const remember = document.getElementById('rememberMe');
+      const emailInput = document.getElementById('email');
+      if (remember.checked) {
+        localStorage.setItem(REMEMBER_KEY, emailInput.value);
+      } else {
+        localStorage.removeItem(REMEMBER_KEY);
+      }
+    }
+
+    window.addEventListener('load', () => {
+      const savedEmail = localStorage.getItem(REMEMBER_KEY);
+      if (savedEmail) {
+        const emailInput = document.getElementById('email');
+        const remember = document.getElementById('rememberMe');
+        emailInput.value = savedEmail;
+        remember.checked = true;
+      }
+    });
+
+    /* ---------- Password visibility toggle ---------- */
+    document
+      .getElementById('togglePassword')
+      .addEventListener('click', () => {
+        const pwd = document.getElementById('password');
+        const isHidden = pwd.type === 'password';
+        pwd.type = isHidden ? 'text' : 'password';
+      });
+
+    /* ---------- Submit + inline validation ---------- */
+    document.getElementById('loginForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const emailInput = document.getElementById('email');
+      const passwordInput = document.getElementById('password');
+      const email = emailInput.value.trim();
+      const password = passwordInput.value;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      clearAllErrors();
+
+      if (!email) {
+        setFieldError('email', 'Email is required');
+        return;
+      }
+      if (!emailRegex.test(email)) {
+        setFieldError('email', 'Please enter a valid email');
+        return;
+      } else {
+        setFieldValid('email');
+      }
+
+      if (!password) {
+        setFieldError('password', 'Password is required');
+        return;
+      }
+      if (password.length < 6) {
+        setFieldError('password', 'Password must be at least 6 characters');
+        return;
+      } else {
+        setFieldValid('password');
+      }
+
+      rememberUser();
+      submitWithSpinner();
+    });
+
+    function submitWithSpinner() {
+      const btn = document.getElementById('loginBtn');
+      const text = btn.querySelector('.button-text');
+      const spinner = btn.querySelector('.spinner');
+
+      btn.disabled = true;
+      spinner.classList.remove('hidden');
+      text.textContent = 'Checking…';
+
+      setTimeout(() => {
+        spinner.classList.add('hidden');
+        text.textContent = '✓ Welcome!';
+        btn.classList.add('success');
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.classList.remove('success');
+          text.textContent = 'Log in';
+        }, 1600);
+      }, 1500);
+    }
+
+    /* ---------- Keyboard shortcut: Esc to clear ---------- */
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+        clearAllErrors();
+        document.getElementById('email').focus();
+      }
+    });
+  </script>
+</body>
+</html>
