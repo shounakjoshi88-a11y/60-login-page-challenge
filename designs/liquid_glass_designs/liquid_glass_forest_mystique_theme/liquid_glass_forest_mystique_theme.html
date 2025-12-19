@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forest Mystique Portal</title>
+  <link rel="stylesheet" href="styles_forest.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <main class="page">
+    <!-- Parallax wrapper (background itself is set in CSS) -->
+    <div class="background-illustration"></div>
+
+    <!-- Login card on the LEFT -->
+    <section class="login-zone login-zone-left">
+      <div class="login-card forest-card">
+        <div class="card-header">
+          <h1>Forest Mystique</h1>
+          <div class="sub-header-row">
+            <p class="card-subtitle">Enter the glowing grove</p>
+            <div class="theme-toggle">
+              <label class="theme-switch">
+                <input type="checkbox" id="themeToggle" />
+                <span class="slider"></span>
+                <span class="theme-label">Dark mode</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <form class="login-form" id="loginForm" autocomplete="off" novalidate>
+          <!-- Email group -->
+          <div class="field input-group">
+            <input
+              type="email"
+              id="email"
+              name="user_field"
+              autocomplete="off"
+              required
+              placeholder=" "
+            />
+            <label for="email">Email or Username</label>
+            <span class="focus-line"></span>
+            <span class="validation-icon" aria-hidden="true"></span>
+
+            <div class="error-row">
+              <span class="error-message hidden" id="email-error">
+                Please enter a valid email
+              </span>
+            </div>
+          </div>
+
+          <!-- Password group -->
+          <div class="field password-input-group">
+            <input
+              type="password"
+              id="password"
+              name="pass_field"
+              autocomplete="new-password"
+              required
+              placeholder=" "
+            />
+            <label for="password">Password</label>
+            <span class="focus-line"></span>
+
+            <button
+              type="button"
+              class="toggle-password"
+              id="togglePassword"
+              aria-label="Show or hide password"
+            >
+              👁️
+            </button>
+
+            <div class="error-row">
+              <span class="error-message hidden" id="password-error">
+                Password is required
+              </span>
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <label class="remember">
+              <input type="checkbox" id="remember-me" />
+              <span class="custom-check"></span>
+              Remember me
+            </label>
+            <a href="#" class="link">Forgot?</a>
+          </div>
+
+          <!-- Button with centered content and spinner -->
+          <button class="login-button btn-primary" id="loginBtn">
+            <span class="button-inner">
+              <span class="button-text">Login</span>
+              <span class="spinner hidden">⏳</span>
+            </span>
+          </button>
+        </form>
+
+        <div class="social-login">
+          <p>Or continue with</p>
+          <div class="social-buttons">
+            <button class="social-btn google" aria-label="Login with Google">
+              <img src="google_logo.png" alt="">
+            </button>
+            <button class="social-btn meta" aria-label="Login with Meta">
+              <img src="meta_logo.png" alt="">
+            </button>
+            <button class="social-btn vk" aria-label="Login with VK">
+              <img src="vk_logo.png" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span>New wanderer?</span>
+          <a href="#" class="link">Create account</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional hero text on the RIGHT for forest theme -->
+    <div class="hero-quote forest-hero-right">
+      <p class="hero-line">“Every shadow hides a secret path.”</p>
+      <p class="hero-sub">Find yours within the mystic woods.</p>
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script>
+    /* ---------- Theme toggle (light/day vs dark/night) ---------- */
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+
+    // Load saved theme or fall back to system preference
+    const savedTheme = localStorage.getItem('forest-theme');
+    if (savedTheme) {
+      root.dataset.theme = savedTheme;
+      themeToggle.checked = savedTheme === 'dark';
+    } else {
+      const prefersDark = window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = prefersDark ? 'dark' : 'light';
+      root.dataset.theme = initialTheme;
+      themeToggle.checked = prefersDark;
+    }
+
+    themeToggle.addEventListener('change', () => {
+      const theme = themeToggle.checked ? 'dark' : 'light';
+      root.dataset.theme = theme;
+      localStorage.setItem('forest-theme', theme);
+    });
+
+    /* ---------- Helpers ---------- */
+    function setFieldError(fieldId, message) {
+      const input = document.getElementById(fieldId);
+      const group = input.closest('.field');
+      const errorSpan = group.querySelector('.error-message');
+      const icon = group.querySelector('.validation-icon');
+
+      input.classList.add('error');
+      if (errorSpan) {
+        errorSpan.textContent = message;
+        errorSpan.classList.remove('hidden');
+      }
+      if (icon) {
+        icon.classList.remove('valid');
+        icon.classList.add('invalid');
+      }
+    }
+
+    function setFieldValid(fieldId) {
+      const input = document.getElementById(fieldId);
+      const group = input.closest('.field');
+      const errorSpan = group.querySelector('.error-message');
+      const icon = group.querySelector('.validation-icon');
+
+      input.classList.remove('error');
+      if (errorSpan) {
+        errorSpan.classList.add('hidden');
+      }
+      if (icon) {
+        icon.classList.remove('invalid');
+        icon.classList.add('valid');
+      }
+    }
+
+    function clearAllErrors() {
+      document
+        .querySelectorAll('.field input')
+        .forEach((inp) => inp.classList.remove('error'));
+      document
+        .querySelectorAll('.error-message')
+        .forEach((msg) => msg.classList.add('hidden'));
+      document
+        .querySelectorAll('.validation-icon')
+        .forEach((ic) => ic.classList.remove('valid', 'invalid'));
+    }
+
+    /* ---------- Validation + submit ---------- */
+    document.getElementById('loginBtn').addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const emailInput = document.getElementById('email');
+      const passwordInput = document.getElementById('password');
+      const email = emailInput.value.trim();
+      const password = passwordInput.value;
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      clearAllErrors();
+
+      // email
+      if (!email) {
+        setFieldError('email', 'Email is required');
+        return;
+      }
+      if (!emailRegex.test(email)) {
+        setFieldError('email', 'Please enter a valid email');
+        return;
+      } else {
+        setFieldValid('email');
+      }
+
+      // password
+      if (!password) {
+        setFieldError('password', 'Password is required');
+        return;
+      }
+      if (password.length < 6) {
+        setFieldError('password', 'Password must be at least 6 characters');
+        return;
+      } else {
+        setFieldValid('password');
+      }
+
+      rememberUser();
+      submitForm();
+    });
+
+    /* ---------- Toggle password ---------- */
+    document.getElementById('togglePassword').addEventListener('click', () => {
+      const pwd = document.getElementById('password');
+      const isHidden = pwd.type === 'password';
+      pwd.type = isHidden ? 'text' : 'password';
+    });
+
+    /* ---------- Submit with spinner ---------- */
+    function submitForm() {
+      const loginBtn = document.getElementById('loginBtn');
+      const btnText = loginBtn.querySelector('.button-text');
+      const spinner = loginBtn.querySelector('.spinner');
+
+      loginBtn.disabled = true;
+      loginBtn.classList.add('loading');
+      spinner.classList.remove('hidden');
+      btnText.textContent = 'CHECKING...';
+
+      setTimeout(() => {
+        spinner.classList.add('hidden');
+        loginBtn.classList.remove('loading');
+        loginBtn.classList.add('success');
+        loginBtn.innerHTML = '<span class="button-inner">✓ Welcome!</span>';
+
+        setTimeout(() => {
+          window.location.href = '/';
+        }, 1500);
+      }, 2000);
+    }
+
+    /* ---------- Keyboard shortcuts ---------- */
+    document.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+        document.getElementById('loginBtn').click();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.getElementById('email').value = '';
+        document.getElementById('password').value = '';
+        clearAllErrors();
+        document.getElementById('email').focus();
+      }
+    });
+
+    /* ---------- Remember me using localStorage ---------- */
+    function rememberUser() {
+      const rememberCheckbox = document.getElementById('remember-me');
+      const emailInput = document.getElementById('email');
+      if (rememberCheckbox && rememberCheckbox.checked) {
+        localStorage.setItem('forestSavedEmail', emailInput.value);
+      } else {
+        localStorage.removeItem('forestSavedEmail');
+      }
+    }
+
+    window.addEventListener('load', () => {
+      const savedEmail = localStorage.getItem('forestSavedEmail');
+      if (savedEmail) {
+        const emailInput = document.getElementById('email');
+        const rememberCheckbox = document.getElementById('remember-me');
+        emailInput.value = savedEmail;
+        if (rememberCheckbox) rememberCheckbox.checked = true;
+      }
+    });
+
+    /* ---------- Subtle parallax ---------- */
+    window.addEventListener('mousemove', (e) => {
+      const illustration = document.querySelector('.background-illustration');
+      if (!illustration) return;
+      const x = (e.clientX / window.innerWidth - 0.5) * 10;
+      const y = (e.clientY / window.innerHeight - 0.5) * 10;
+      illustration.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+
+    /* ---------- Simple analytics hook ---------- */
+    function trackEvent(eventName, data) {
+      console.log('Event:', eventName, data);
+    }
+
+    document.getElementById('loginBtn').addEventListener('click', () => {
+      trackEvent('forest_login_attempt', {
+        timestamp: new Date().toISOString(),
+        email_filled: !!document.getElementById('email').value
+      });
+    });
+  </script>
+</body>
+</html>
