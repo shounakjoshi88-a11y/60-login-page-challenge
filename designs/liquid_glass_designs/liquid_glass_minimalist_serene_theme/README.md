@@ -31,12 +31,10 @@ A tranquil and sophisticated login page design that embodies minimalism and sere
 ## 📸 Preview
 
 ### Light Mode
-![Light Mode - Coming Soon](./gallery/light-mode.png)
-*Bright, ethereal landscape with a serene dawn aesthetic*
+![Light Mode - Coming Soon](../light-mode.png)*Bright, ethereal landscape with a serene dawn aesthetic*
 
 ### Dark Mode
-![Dark Mode - Coming Soon](./gallery/dark-mode.png)
-*Deep blue mountains with peaceful nighttime ambiance*
+![Dark Mode - Coming Soon](../dark-mode.png)*Deep blue mountains with peaceful nighttime ambiance*
 
 ## 🛠️ Technologies Used
 
