@@ -5,7 +5,7 @@
 *A Personal Journey Through CSS Design*
 
 [![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)]()
-[![Progress](https://img.shields.io/badge/Progress-5%2F60-red?style=for-the-badge)]()[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
+[![Progress](https://img.shields.io/badge/Progress-6%2F60-red?style=for-the-badge)]()[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
 
 </div>
@@ -105,14 +105,14 @@ Each design explores different CSS concepts and aesthetic styles:
 | 03 | Cosmic Space 🚀 | [View](/designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |      
 | 04 | Desert Mirage 🏜 | [View](./designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |   
 | 05 | Forest Mystique 🌲 | [View](/designs/liquid_glass_designs/liquid_glass_forest_mystique_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |
-| 06 | Minimalist Serene 🧘 | Coming Soon | 📋 Planned | TBD | 0 |
+| 06 | Minimalist Serene ⏸️ | [View](https://github.com/shounakjoshi88-a11y/60-loginpagechallenge/tree/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme) | ✅ Complete | 2025-12-20 | 1 |
 | 07 | Ocean Deep 🌊 | Coming Soon | 📋 Planned | TBD | 0 |
 | 08 | Sunset Horizon 🌅 | Coming Soon | 📋 Planned | TBD | 0 |
 | 09 | Urban Neon 🌃 | Coming Soon | 📋 Planned | TBD | 0 |
 | **TOTAL** | **Liquid Glass Series** | - | - | - | **4/9** |
 
 ### 📈 Overall Progress
-- **Completed**: 5 Liquid glass designs ✅ - **Planned**: 4 designs 📋 - **Total**: 5/9 (55% complete)## 🔧 Tech Stack
+- **Completed**: 6 Liquid glass designs ✅ - **Planned**: 3 designs 📋 - **Total**: 6/9 (55% complete)## 🔧 Tech Stack
 
 - **Markup**: HTML5
 - **Styling**: Pure CSS3 (No preprocessing)
