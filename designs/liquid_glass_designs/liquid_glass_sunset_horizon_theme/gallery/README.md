@@ -11,7 +11,7 @@ Both light and dark variants share the same poetic hero illustration backdrop wh
 
 ## Light Mode - Golden Sunset
 
-**Preview Image:** [`sunset.png`](./sunset.png)
+**Preview Image:** ![Light Mode Preview](./sunset.png)
 
 ### Color Palette
 The light mode glows with dramatic warm tones that capture the final moments of a vibrant sunset:
@@ -29,7 +29,7 @@ The warm color scheme creates an energetic, adventurous mood. The prominent "Con
 
 ## Dark Mode - Moonlit Horizon
 
-**Preview Image:** [`night.png`](./night.png)
+**Preview Image:** ![Dark Mode Preview](./night.png)
 
 ### Color Palette
 The dark mode shifts to a calm, mystical atmosphere with cool lunar tones:
