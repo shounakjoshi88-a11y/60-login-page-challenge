@@ -105,7 +105,7 @@ Each design explores different CSS concepts and aesthetic styles:
 | 03 | Cosmic Space 🚀 | [View](/designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |      
 | 04 | Desert Mirage 🏜 | [View](./designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |   
 | 05 | Forest Mystique 🌲 | [View](/designs/liquid_glass_designs/liquid_glass_forest_mystique_theme/gallery) | ✅ Complete | 2025-12-19 | 1 |
-| 06 | Minimalist Serene ⏸️ | [View](https://github.com/shounakjoshi88-a11y/60-loginpagechallenge/tree/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme) | ✅ Complete | 2025-12-20 | 1 |
+| 06 | Minimalist Serene ⏸️ | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/tree/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme) | ✅ Complete | 2025-12-20 | 1 |
 | 07 | Ocean Deep 🌊 | Coming Soon | 📋 Planned | TBD | 0 |
 | 08 | Sunset Horizon 🌅 | Coming Soon | 📋 Planned | TBD | 0 |
 | 09 | Urban Neon 🌃 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/tree/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme) | ✅ Complete | 2025-12-20 | 2 || **TOTAL** | **Liquid Glass Series** | - | - | - | **4/9** |
