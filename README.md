@@ -5,7 +5,7 @@
 *A Personal Journey Through CSS Design*
 
 [![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)]()
-[![Progress](https://img.shields.io/badge/Progress-6%2F60-red?style=for-the-badge)]()[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
+[![Progress](https://img.shields.io/badge/Progress-10%2F60-red?style=for-the-badge)]()[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
 [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
 
 </div>
