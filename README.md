@@ -108,12 +108,10 @@ Each design explores different CSS concepts and aesthetic styles:
 | 06 | Minimalist Serene ⏸️ | [View](https://github.com/shounakjoshi88-a11y/60-loginpagechallenge/tree/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme) | ✅ Complete | 2025-12-20 | 1 |
 | 07 | Ocean Deep 🌊 | Coming Soon | 📋 Planned | TBD | 0 |
 | 08 | Sunset Horizon 🌅 | Coming Soon | 📋 Planned | TBD | 0 |
-| 09 | Urban Neon 🌃 | Coming Soon | 📋 Planned | TBD | 0 |
-| **TOTAL** | **Liquid Glass Series** | - | - | - | **4/9** |
+| 09 | Urban Neon 🌃 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/tree/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme) | ✅ Complete | 2025-12-20 | 2 || **TOTAL** | **Liquid Glass Series** | - | - | - | **4/9** |
 
 ### 📈 Overall Progress
-- **Completed**: 6 Liquid glass designs ✅ - **Planned**: 3 designs 📋 - **Total**: 6/9 (66% complete)## 🔧 Tech Stack
-
+- **Completed**: 7 Liquid glass designs ✅ - **Planned**: 2 designs 📋 - **Total**: 7/9 (78% complete)
 - **Markup**: HTML5
 - **Styling**: Pure CSS3 (No preprocessing)
 - **Features**: 
