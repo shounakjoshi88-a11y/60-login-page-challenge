@@ -23,6 +23,14 @@ Welcome to **Neon Haven Theme 2** - the premium cyberpunk variant featuring a st
 ## 🌇 Visual Showcase
 
 ### 🌙 Dark Mode (Night City)
+
+![Theme 2 Night Mode Preview](./gallery/theme-2-night.png)
+
+### ☀️ Light Mode (Day City)
+
+![Theme 2 Day Mode Preview](./gallery/theme-2-day.png)
+
+### 🌙 Dark Mode (Night City)
 The signature cyberpunk aesthetic with deep navy backgrounds and vibrant neon lights
 
 - Neon-lit skyscrapers with purple, cyan, and pink lights
