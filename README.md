@@ -81,7 +81,7 @@ Hey there! I'm a first-year CSE student challenging myself to create **60 unique
 
 Each design explores different CSS concepts and aesthetic styles:
 
-### 🌌 **Liquid Glass Series** (Currently Working)
+### 🌌 **Liquid Glass Series** (Completed)
 - ✨ Aurora Nights - Northern lights with glass morphism
 - 🌴 Teal Jungle - Tropical paradise vibe
 - 🚀 Cosmic Space - Stars and galaxies
@@ -91,6 +91,91 @@ Each design explores different CSS concepts and aesthetic styles:
 - 🌊 Ocean Deep - Deep blue waters
 - 🌅 Sunset Horizon - Golden hour magic
 - 🌃 Urban Neon - Cyberpunk vibes
+- 
+### 🧊 **Neumorphism Series** (Ready to Build)
+
+*   •  
+    🔘 Soft Beige - Subtle shadows and highlights
+*   •  
+    🌙 Dark Mode - Minimalist dark interface
+*   •  
+    🎨 Gradient - Smooth color transitions
+*   •  
+    💎 Metallic - Chrome and glass effects
+
+### 🌃 **Cyberpunk Series** (Ready to Build)
+
+*   •  
+    💜 Neon Nights - High contrast glowing text
+*   •  
+    🟢 Matrix - Green on black terminal style
+*   •  
+    🌈 Synthwave - Retro futurism aesthetic
+*   •  
+    ⚡ Holographic - Mirror and glow effects
+
+### 📱 **Minimalist Flat Series** (Ready to Build)
+
+*   •  
+    ◻️ Swiss Style - Geometric precision
+*   •  
+    📐 Material Design - Clean and organized
+*   •  
+    🎯 Bold Colors - Vibrant flat palette
+*   •  
+    🔤 Typography Focus - Text-driven design
+
+### 🎥 **3D & Perspective Series** (Ready to Build)
+
+*   •  
+    🃏 Card Stack - Layered perspective
+*   •  
+    ☁️ Floating - Depth and shadows
+*   •  
+    📐 Isometric - 3D geometric layout
+*   •  
+    🔄 Rotating - Transform animations
+
+### ✨ **Animated & Interactive Series** (Building Now - 8/8 themes created)
+
+*   •  
+    🌊 Animated Background - Looping effects
+*   •  
+    💫 Floating Elements - Hovering animations
+*   •  
+    ⌨️ Interactive Forms - Focus state animations
+*   •  
+    🔀 Page Transitions - Smooth navigation
+*   •  
+    ⏳ Loading States - Animated spinners
+*   •  
+    🎭 Morphing Shapes - SVG transformations
+*   •  
+    ✨ Particle Effects - Dynamic backgrounds
+*   •  
+    📩 Slide Animations - Smooth slide-in
+
+### 🕰️ **Retro & Vintage Series** (Ready to Build)
+
+*   •  
+    🎆 80s Neon - Bright retro aesthetic
+*   •  
+    🖥️ 90s Web - Classic internet vibes
+*   •  
+    🎬 VHS Tape - Nostalgic film effects
+*   •  
+    🎮 Pixel Art - 8-bit style design
+
+### 🌿 **Nature Inspired Series** (Ready to Build)
+
+*   •  
+    🌱 Botanical - Plant and leaf motifs
+*   •  
+    🏔️ Mountain - Peak and slope aesthetics
+*   •  
+    🐠 Underwater - Marine life themes
+*   •  
+    ❄️ Weather - Seasonal environments
 
 ---
 
@@ -108,10 +193,23 @@ Each design explores different CSS concepts and aesthetic styles:
 | 06 | Minimalist Serene ⏸️ | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/tree/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme) | ✅ Complete | 2025-12-20 | 1 |
 | 07 | Ocean Deep 💧 | [View](/designs/liquid_glass_designs/liquid_glass_ocean_deep_theme/gallery) | ✅ Complete | 2025-12-20 | 1 |
 | 08 | Sunset Horizon 🌅 | [View](/designs/liquid_glass_designs/liquid_glass_sunset_horizon_theme/gallery) | ✅ Complete | 2025-12-20 | 1 |
-| 09 | Urban Neon 🌃 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/tree/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme) | ✅ Complete | 2025-12-20 | 2 || **TOTAL** | **Liquid Glass Series** | - | - | - | **4/9** |
+| 09 | Urban Neon 🌃 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/tree/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme) | ✅ Complete | 2025-12-20 | 2 || **TOTAL** | **Liquid Glass 
+
+### ✨ Series: Animated & Interactive Designs
+
+| # | Design Name | Gallery | Status | Created | # of Designs |
+|---|---|---|---|---|---|
+| 01 | Animated Background Loop 🌊 | - | 📑 Building | 2025-12-21 | 1 |
+| 02 | Floating Elements 💫 | - | 📑 Building | 2025-12-21 | 1 |
+| 03 | Interactive Form Focus ⌨️ | - | 📑 Building | 2025-12-21 | 1 |
+| 04 | Page Transitions 🔀 | - | 📑 Building | 2025-12-21 | 1 |
+| 05 | Loading States ⏳ | - | 📑 Building | 2025-12-21 | 1 |
+| 06 | Morphing Shapes 🎭 | - | 📑 Building | 2025-12-21 | 1 |
+| 07 | Particle Effects ✨ | - | 📑 Building | 2025-12-21 | 1 |
+| 08 | Slide Animations 📩 | - | 📑 Building | 2025-12-21 | 1 |Series** | - | - | - | **4/9** |
 
 ### 📈 Overall Progress
-- **Completed**: 10 Liquid glass designs ✅ - **Planned**: 0 designs - **Total**: 10/10 (100% complete) 🎉
+*   • **Completed**: 10 Liquid Glass designs ✅ - **Building**: 8 Animated/Interactive designs 🏗️ - **Planned**: 42 designs across 6 series - **Total**: 18/60 (30% complete) 🚀
 - **Markup**: HTML5
 - **Styling**: Pure CSS3 (No preprocessing)
 - **Features**: 
