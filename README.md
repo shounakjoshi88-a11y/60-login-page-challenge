@@ -199,14 +199,14 @@ Each design explores different CSS concepts and aesthetic styles:
 
 | # | Design Name | Gallery | Status | Created | # of Designs |
 |---|---|---|---|---|---|
-| 01 | Animated Background Loop 🌊 | - | 📑 Building | 2025-12-21 | 1 |
-| 02 | Floating Elements 💫 | - | 📑 Building | 2025-12-21 | 1 |
-| 03 | Interactive Form Focus ⌨️ | - | 📑 Building | 2025-12-21 | 1 |
-| 04 | Page Transitions 🔀 | - | 📑 Building | 2025-12-21 | 1 |
-| 05 | Loading States ⏳ | - | 📑 Building | 2025-12-21 | 1 |
-| 06 | Morphing Shapes 🎭 | - | 📑 Building | 2025-12-21 | 1 |
-| 07 | Particle Effects ✨ | - | 📑 Building | 2025-12-21 | 1 |
-| 08 | Slide Animations 📩 | - | 📑 Building | 2025-12-21 | 1 |Series** | - | - | - | **4/9** |
+| 01 | Animated Background Loop 🌊 | - | 📑 Building | TBD | 1 |
+| 02 | Floating Elements 💫 | - | 📑 Building | TBD | 1 |
+| 03 | Interactive Form Focus ⌨️ | - | 📑 Building | TBD | 1 |
+| 04 | Page Transitions 🔀 | - | 📑 Building | TBD | 1 |
+| 05 | Loading States ⏳ | - | 📑 Building | TBD | 1 |
+| 06 | Morphing Shapes 🎭 | - | 📑 Building | TBD | 1 |
+| 07 | Particle Effects ✨ | - | 📑 Building | TBD | 1 |
+| 08 | Slide Animations 📩 | - | 📑 Building | TBD | 1 |Series** | - | - | - | **0/9** |
 
 ### 📈 Overall Progress
 *   • **Completed**: 10 Liquid Glass designs ✅ - **Building**: 8 Animated/Interactive designs 🏗️ - **Planned**: 42 designs across 6 series - **Total**: 18/60 (30% complete) 🚀
