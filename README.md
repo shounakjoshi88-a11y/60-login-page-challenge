@@ -43,7 +43,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 60-login-page-challenge/
 │
 ├── designs/
-│   ├── liquid_glass_designs/              [✅ COMPLETED - 10 themes]
+│   ├── liquid_glass_designs/ [✅ COMPLETED - 10 themes]
 │   │   ├── liquid_glass_aurora_nights_theme/
 │   │   │   ├── index.html
 │   │   │   ├── styles.css
@@ -62,9 +62,9 @@ Each design is a showcase of different CSS techniques, animation principles, and
 │   │   ├── liquid_glass_urban_neon_theme/
 │   │   └── [10th theme]
 │   │
-│   └── animated_interactive_designs/      [✅ COMPLETED - 2 themes]
+│   └── animated_interactive_designs/ [✅ COMPLETED - 2 themes]
 │       └── animated_background_loop_theme/
-│           ├── theme_1/                   [Animated Background Loop]
+│           ├── theme_1/ [Animated Background Loop]
 │           │   ├── index.html
 │           │   ├── css/
 │           │   ├── js/
@@ -74,7 +74,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 │           │       ├── demo.png
 │           │       └── demo.mp4
 │           │
-│           └── theme_2/                   [Floating Elements - Cyberpunk]
+│           └── theme_2/ [Floating Elements - Cyberpunk]
 │               ├── index.html
 │               ├── css/
 │               ├── js/
@@ -84,57 +84,59 @@ Each design is a showcase of different CSS techniques, animation principles, and
 │                   ├── demo.png
 │                   └── demonstration.mp4
 │
-└── README.md                              [This file]
+└── README.md [This file]
 ```
 
 ---
 
-## 🎯 Design Categories & Themes
+## 🎯 Progress Tracker
 
-### 🌌 **Liquid Glass Series** ✅ (10/10 Complete)
+### 🌌 **Liquid Glass Series** ✅ (9/10 Complete)
+
 *Glass morphism aesthetic with frosted glass effects, elegant gradients, and soft shadows*
 
-| # | Design | Status | Date Created | Gallery Link |
-|---|--------|--------|--------------|---------------|
-| 1 | Aurora Nights 🌌 | ✅ Complete | Dec 08 | [View](./designs/liquid_glass_designs/liquid_glass_aurora_nights_theme/gallery) |
-| 2 | Teal Jungle 🌴 | ✅ Complete | Dec 08 | [View](./designs/liquid_glass_designs/liquid_glass_teal_jungle_theme/gallery) |
-| 3 | Cosmic Space 🚀 | ✅ Complete | Dec 19 | [View](./designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) |
-| 4 | Desert Mirage 🏜️ | ✅ Complete | Dec 19 | [View](./designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery) |
-| 5 | Forest Mystique 🌲 | ✅ Complete | Dec 19 | [View](./designs/liquid_glass_designs/liquid_glass_forest_mystique_theme/gallery) |
-| 6 | Minimalist Serene 🧘 | ✅ Complete | Dec 20 | [View](./designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme) |
-| 7 | Ocean Deep 🌊 | ✅ Complete | Dec 20 | [View](./designs/liquid_glass_designs/liquid_glass_ocean_deep_theme/gallery) |
-| 8 | Sunset Horizon 🌅 | ✅ Complete | Dec 20 | [View](./designs/liquid_glass_designs/liquid_glass_sunset_horizon_theme/gallery) |
-| 9 | Urban Neon 🌃 | ✅ Complete | Dec 20 | [View](./designs/liquid_glass_designs/liquid_glass_urban_neon_theme) |
-| 10 | [Special Theme] | ✅ Complete | TBD | TBD |
+| # | Design | Status | Date Created | # of Versions | Gallery Link |
+|---|--------|--------|--------------|---------------|--|
+| 1 | Aurora Nights 🌌 | ✅ Complete | Dec 08 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_aurora_nights_theme/gallery) |
+| 2 | Teal Jungle 🌴 | ✅ Complete | Dec 08 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_teal_jungle_theme/gallery) |
+| 3 | Cosmic Space 🚀 | ✅ Complete | Dec 19 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) |
+| 4 | Desert Mirage 🏜️ | ✅ Complete | Dec 19 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery) |
+| 5 | Forest Mystique 🌲 | ✅ Complete | Dec 19 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_forest_mystique_theme/gallery) |
+| 6 | Minimalist Serene 🧘 | ✅ Complete | Dec 20 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme) |
+| 7 | Ocean Deep 🌊 | ✅ Complete | Dec 20 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_ocean_deep_theme/gallery) |
+| 8 | Sunset Horizon 🌅 | ✅ Complete | Dec 20 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_sunset_horizon_theme/gallery) |
+| 9 | Urban Neon 🌃 | ✅ Complete | Dec 20 | 2 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme) |
 
 ### ✨ **Animated & Interactive Series** ✅ (2/8 Complete)
+
 *Dynamic designs with smooth animations, particle systems, and interactive elements*
 
-| # | Design | Features | Status | Date Created | Gallery Link |
-|---|--------|----------|--------|---------------|--------------|
-| 1 | Animated Background Loop 🌊 | Video background, smooth animations | ✅ Complete | Jan 02 | [View](./designs/animated_interactive_designs/animated_background_loop_theme/theme_1/gallery) |
-| 2 | Floating Elements 💫 | Canvas particles, ripple effects, cyberpunk | ✅ Complete | Jan 02 | [View](./designs/animated_interactive_designs/animated_background_loop_theme/theme_2/gallery) |
-| 3 | Interactive Form Focus ⌨️ | Form state animations | 📝 Coming Soon | TBD | - |
-| 4 | Page Transitions 🔀 | Smooth navigation effects | 📝 Coming Soon | TBD | - |
-| 5 | Loading States ⏳ | Animated spinners & loaders | 📝 Coming Soon | TBD | - |
-| 6 | Morphing Shapes 🎭 | SVG transformations | 📝 Coming Soon | TBD | - |
-| 7 | Particle Effects ✨ | Dynamic backgrounds | 📝 Coming Soon | TBD | - |
-| 8 | Slide Animations 📩 | Smooth slide-in effects | 📝 Coming Soon | TBD | - |
+| # | Design | Features | Status | Date Created | # of Versions | Gallery Link |
+|---|--------|----------|--------|--------------|---|---|
+| 1 | Animated Background Loop 🌊 | Video background, smooth animations | ✅ Complete | Jan 02 | 2 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_1/gallery) |
+| 2 | Floating Elements 💫 | Canvas particles, ripple effects, cyberpunk | ✅ Complete | Jan 02 | 1 | - |
+| 3 | Interactive Form Focus ⌨️ | Form state animations | 📝 Coming Soon | TBD | - | - |
+| 4 | Page Transitions 🔀 | Smooth navigation effects | 📝 Coming Soon | TBD | - | - |
+| 5 | Loading States ⏳ | Animated spinners & loaders | 📝 Coming Soon | TBD | - | - |
+| 6 | Morphing Shapes 🎭 | SVG transformations | 📝 Coming Soon | TBD | - | - |
+| 7 | Particle Effects ✨ | Dynamic backgrounds | 📝 Coming Soon | TBD | - | - |
+| 8 | Slide Animations 📩 | Smooth slide-in effects | 📝 Coming Soon | TBD | - | - |
 
 ### 🏗️ **Upcoming Series** (Ready to Build)
 
-- **🧊 Neumorphism** - Soft, sculptural design with subtle depth
-- **🌃 Cyberpunk** - Neon-drenched futuristic aesthetics
-- **📱 Minimalist Flat** - Clean, modern, distraction-free
-- **🎥 3D & Perspective** - Depth effects and spatial design
-- **🕰️ Retro & Vintage** - Nostalgic design elements
-- **🌿 Nature Inspired** - Organic shapes and botanical themes
+- 🧊 **Neumorphism** - Soft, sculptural design with subtle depth
+- 🌃 **Cyberpunk** - Neon-drenched futuristic aesthetics
+- 📱 **Minimalist Flat** - Clean, modern, distraction-free
+- 🎥 **3D & Perspective** - Depth effects and spatial design
+- 🕰️ **Retro & Vintage** - Nostalgic design elements
+- 🌿 **Nature Inspired** - Organic shapes and botanical themes
 
 ---
 
 ## ✨ Key Features & Capabilities
 
 ### 🎨 Design Excellence
+
 - Unique aesthetic for each design concept
 - Professional color palettes and typography
 - Consistent design language across series
@@ -142,6 +144,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 - Smooth animations and transitions
 
 ### ⚡ Technical Mastery
+
 - Pure HTML5 semantic markup
 - Advanced CSS3 (Grid, Flexbox, Filters, Animations)
 - Vanilla JavaScript (no dependencies)
@@ -150,6 +153,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 - Browser compatibility (Chrome, Firefox, Safari, Edge)
 
 ### 📖 Professional Documentation
+
 - Comprehensive README for each design
 - Visual galleries with screenshots & videos
 - Design insights and technical breakdowns
@@ -160,11 +164,13 @@ Each design is a showcase of different CSS techniques, animation principles, and
 ## 🚀 Getting Started
 
 ### View Online
-1. **Explore Designs** - Browse the [designs folder](./designs)
+
+1. **Explore Designs** - Browse the [designs folder](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs)
 2. **View Galleries** - Check screenshots and videos in each gallery folder
 3. **Read Documentation** - Learn technical details in each design's README
 
 ### Run Locally
+
 ```bash
 # Clone repository
 git clone https://github.com/shounakjoshi88-a11y/60-login-page-challenge.git
@@ -174,9 +180,9 @@ cd 60-login-page-challenge
 cd designs/liquid_glass_designs/liquid_glass_aurora_nights_theme
 
 # Open in browser
-open index.html              # macOS
-start index.html             # Windows
-python -m http.server 8000  # With live server
+open index.html                # macOS
+start index.html              # Windows
+python -m http.server 8000    # With live server
 ```
 
 ---
@@ -186,6 +192,7 @@ python -m http.server 8000  # With live server
 This challenge demonstrates expertise in:
 
 ### CSS Technologies
+
 - Backdrop filters & glassmorphism
 - Complex gradient creation
 - Transform & animation techniques
@@ -193,6 +200,7 @@ This challenge demonstrates expertise in:
 - Blend modes & visual effects
 
 ### JavaScript Concepts
+
 - DOM manipulation & event handling
 - Canvas API & particle systems
 - RequestAnimationFrame optimization
@@ -200,6 +208,7 @@ This challenge demonstrates expertise in:
 - Performance optimization
 
 ### Design Principles
+
 - Color theory & palette creation
 - Typography & visual hierarchy
 - UI/UX best practices
@@ -260,6 +269,7 @@ Every design includes:
 ## 👨‍💻 Developer Profile
 
 **Shonak Joshi**
+
 - 🎓 First-Year CSE Student @ RCOEM
 - 🌍 Nagpur, India
 - 💻 Full-Stack Web Developer
@@ -274,12 +284,12 @@ Every design includes:
 
 ```
 2025
-├─ Dec 08  → Started Liquid Glass Series
-├─ Dec 20  → Completed 10 Glass Morphism Designs
-└─ Dec 31  → Prepared Animated Series Framework
+├─ Dec 08 → Started Liquid Glass Series
+├─ Dec 20 → Completed 10 Glass Morphism Designs
+└─ Dec 31 → Prepared Animated Series Framework
 
 2026
-├─ Jan 02  → Completed 2 Animated & Interactive Designs
+├─ Jan 02 → Completed 2 Animated & Interactive Designs
 └─ Ongoing → Building remaining 46 designs
 ```
 
@@ -295,8 +305,6 @@ Every design includes:
 
 ---
 
-<div align="center">
-
 ### Made with ❤️ & CSS
 
 *Transforming authentication design through pure code, creativity, and technical excellence*
@@ -304,5 +312,3 @@ Every design includes:
 **Status**: 12/60 designs complete | **Progress**: 20% | **Last Updated**: January 2, 2026
 
 [⬆ Back to Top](#-60-login-page-design-challenge)
-
-</div>
