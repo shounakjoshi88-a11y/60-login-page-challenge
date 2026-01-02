@@ -10,9 +10,9 @@ A **cyberpunk-styled interactive login page** featuring a looping video backgrou
 
 > **▶️ Click the badge above to watch the interactive demo video in loop**
 
-Or view it directly: [Demo Video](gallery/demo.mp4)
+Or view it directly: [Demo Video](demo.mp4)
 
-![NEURAL NEXUS Login Page Screenshot](gallery/demo.png)
+![NEURAL NEXUS Login Page Screenshot](demo.png)
 ## ✨ Key Features
 
 ### Visual Design
