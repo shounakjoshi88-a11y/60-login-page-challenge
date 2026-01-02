@@ -133,7 +133,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 *Glass morphism aesthetic with frosted glass effects, elegant gradients, and soft shadows*
 
 | # | Design | Status | Date Created | # of Versions | Gallery Link |
-|---|--------|--------|--------------|---------------|--|
+|---|---------|---------|--------------|----------|-------------|
 | 1 | Aurora Nights 🌌 | ✅ Complete | Dec 08 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_aurora_nights_theme/gallery) |
 | 2 | Teal Jungle 🌴 | ✅ Complete | Dec 08 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_teal_jungle_theme/gallery) |
 | 3 | Cosmic Space 🚀 | ✅ Complete | Dec 19 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_cosmic_space_theme/gallery) |
@@ -149,7 +149,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 *Dynamic designs with smooth animations, particle systems, and interactive elements*
 
 | # | Design | Features | Status | Date Created | # of Versions | Gallery Link |
-|---|--------|----------|--------|--------------|---|---|
+|---|---------|---------|---------|--------------|----------|-------------|
 | 1 | Animated Background Loop 🌊 | Video background, smooth animations | ✅ Complete | Jan 02 | 2 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_1/gallery) [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_2/gallery)|
 | 2 | Floating Elements 💫 | Canvas particles, ripple effects, cyberpunk | 📝 Coming Soon | TBD | - | - |
 | 3 | Interactive Form Focus ⌨️ | Form state animations | 📝 Coming Soon | TBD | - | - |
