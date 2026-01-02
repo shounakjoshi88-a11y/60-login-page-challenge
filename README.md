@@ -1,3 +1,4 @@
+10/60    12/60
 <div align="center">
 
 # 🎨 60 Login Page Challenge
@@ -136,7 +137,8 @@ Each design explores different CSS concepts and aesthetic styles:
 *   •  
     🔄 Rotating - Transform animations
 
-### ✨ **Animated & Interactive Series** (Building Now - 8/8 themes created)
+170
+(Building Now - 8/8 themes created)
 
 *   •  
     🌊 Animated Background - Looping effects
