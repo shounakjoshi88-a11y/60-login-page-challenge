@@ -1,5 +1,13 @@
 # Floating Elements - Cyberpunk Login Portal
 
+## 🖼️ Quick Preview
+
+![FLOAT LOGIN Preview](./gallery/demo.png)
+
+**Experience the cyberpunk neon aesthetic immediately** - See the glowing cyan title, dark space background with floating particles, vibrant gradient button, and interactive form elements in action.
+
+> Click the demo image above to open the full gallery with video demonstrations and interactive walkthrough!
+
 ## Overview
 
 **Floating Elements** is a cutting-edge cyberpunk-themed login portal that combines futuristic aesthetics with smooth interactive animations. The design features floating particle elements, neon gradients, and a dark space-inspired background that creates an immersive user experience reminiscent of sci-fi interfaces.
