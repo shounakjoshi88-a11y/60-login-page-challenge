@@ -114,7 +114,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 | # | Design | Features | Status | Date Created | # of Versions | Gallery Link |
 |---|--------|----------|--------|--------------|---|---|
 | 1 | Animated Background Loop 🌊 | Video background, smooth animations | ✅ Complete | Jan 02 | 2 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_1/gallery) [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_2/gallery)|
-| 2 | Floating Elements 💫 | Canvas particles, ripple effects, cyberpunk | ✅ Complete | Jan 02 | 1 | - |
+| 2 | Floating Elements 💫 | Canvas particles, ripple effects, cyberpunk | 📝 Coming Soon | TBD | - | - |
 | 3 | Interactive Form Focus ⌨️ | Form state animations | 📝 Coming Soon | TBD | - | - |
 | 4 | Page Transitions 🔀 | Smooth navigation effects | 📝 Coming Soon | TBD | - | - |
 | 5 | Loading States ⏳ | Animated spinners & loaders | 📝 Coming Soon | TBD | - | - |
