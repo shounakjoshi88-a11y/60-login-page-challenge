@@ -36,6 +36,54 @@ Welcome to the **Floating Elements** gallery! This folder showcases visual demon
   - Floating particles in background
   - "Lost passkey?" and "Request access" links
   - Overall cyberpunk aesthetic
+ 
+  - ## 🖼️ Preview
+
+### Visual Preview
+
+Below is a screenshot of the **Floating Elements** theme in action:
+
+![FLOAT LOGIN Preview](./demo.png)
+
+**Screenshot Details:**
+- Cyberpunk login interface with neon aesthetics
+- Glowing cyan title and subtle cyan text
+- Dark navy/purple background with floating particles
+- Interactive form fields with cyan borders
+- Vibrant gradient button (cyan → purple → magenta)
+- Responsive design elements
+- Professional, futuristic appearance
+
+### Video Demonstration
+
+For a complete interactive walkthrough, watch the full video demonstration:
+
+**Video File**: `demonstration.mp4`
+
+**Video Features**:
+- Complete user interaction walkthrough
+- Floating particle animations
+- Click ripple effects and particle repulsion
+- Form field focus states
+- Button hover and click effects
+- Mouse movement tracking
+- Responsive behavior showcase
+- Full animation cycles
+
+**How to Watch**:
+1. Click on `demonstration.mp4` in the gallery folder
+2. GitHub will play the video inline
+3. Or download and play locally in your media player
+
+### Interactive Experience
+
+To experience the theme interactively:
+1. Open `../index.html` in your web browser
+2. Watch particles drift and animate
+3. Click anywhere to create ripple effects
+4. Move your mouse to see particle responses
+5. Interact with form elements
+6. Observe smooth animations and transitions
 
 ## Design Showcase
 
