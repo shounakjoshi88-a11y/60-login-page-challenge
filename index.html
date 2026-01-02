@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <title>NEURAL NEXUS — Animated Background Loop</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts (CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/background.css" />
+  <link rel="stylesheet" href="css/quote.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- VIDEO base layer -->
+  <video
+    id="bg-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-hidden="true"
+  >
+    <source src="assets/video/bg-loop.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Canvas particles -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Overlays -->
+  <div class="bg-overlay bg-noise" aria-hidden="true"></div>
+  <div class="bg-overlay bg-scanlines" aria-hidden="true"></div>
+
+  <!-- Quote (Top-Left Corner) -->
+  <aside class="quote-section" aria-label="Motivational quote">
+    <div class="quote-divider"></div>
+    <p class="quote-text">"The system is watching. Stay encrypted."</p>
+  </aside>
+
+  <!-- UI layer -->
+  <main class="page">
+    <section class="login-shell" role="region" aria-label="Login">
+      <header class="login-header">
+        <h1 class="glitch" data-text="NEXUS LOGIN">NEXUS LOGIN</h1>
+        <p class="subtitle">Secure handshake required</p>
+      </header>
+
+      <form class="login-card" autocomplete="off" novalidate>
+        <label class="field">
+          <span class="label">User ID</span>
+          <input
+            type="text"
+            name="username"
+            placeholder="neo"
+            autocomplete="off"
+            required
+            minlength="2"
+          />
+        </label>
+
+        <label class="field">
+          <span class="label">Passkey</span>
+          <input
+            type="password"
+            name="password"
+            placeholder="enter your passkey"
+            autocomplete="off"
+            required
+            minlength="6"
+          />
+        </label>
+
+        <button class="btn" type="submit">
+          <span class="btn-text">Login</span>
+          <span class="btn-glow" aria-hidden="true"></span>
+        </button>
+
+        <div class="meta">
+          <a href="#" class="link">Forgot passkey?</a>
+          <a href="#" class="link">Request access</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script defer src="js/bg-canvas.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
