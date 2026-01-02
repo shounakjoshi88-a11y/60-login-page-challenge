@@ -1,0 +1,192 @@
+/* css/background.css */
+/* Floating elements theme: base gradient + float-field + (optional) canvas + overlays */
+
+html, body{
+  height: 100%;
+}
+
+body{
+  background:
+    radial-gradient(1200px 700px at 20% 25%, rgba(47,247,255,0.10), transparent 55%),
+    radial-gradient(1100px 650px at 80% 70%, rgba(255,79,216,0.10), transparent 58%),
+    radial-gradient(900px 600px at 50% 50%, rgba(124,92,255,0.08), transparent 60%),
+    linear-gradient(180deg, var(--bg-0), var(--bg-1));
+  overflow: hidden;
+}
+
+/* Subtle haze above base bg */
+body::before{
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 30%, rgba(47,247,255,0.10), transparent 45%),
+    radial-gradient(circle at 78% 66%, rgba(255,79,216,0.09), transparent 50%),
+    radial-gradient(circle at 50% 55%, rgba(124,92,255,0.07), transparent 55%);
+  filter: blur(6px);
+}
+
+/* If an old bg-video still exists somewhere, hide it safely */
+#bg-video{
+  display: none;
+}
+
+/* Floating elements field (DOM-based) */
+.float-field{
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* shared bubble style */
+.float-item{
+  position: absolute;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  width: var(--s, 40px);
+  height: var(--s, 40px);
+  border-radius: 999px;
+
+  /* visual */
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.22), transparent 55%),
+    radial-gradient(circle at 65% 70%, rgba(255,255,255,0.10), transparent 60%),
+    linear-gradient(135deg,
+      rgba(47,247,255, var(--float-alpha, 0.22)),
+      rgba(124,92,255, calc(var(--float-alpha, 0.22) * 0.9)),
+      rgba(255,79,216, calc(var(--float-alpha, 0.22) * 0.85))
+    );
+
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.06),
+    0 18px 70px rgba(0,0,0,0.45);
+
+  filter: blur(var(--float-blur, 18px));
+  opacity: 0.85;
+
+  /* motion */
+  transform: translate3d(-50%, -50%, 0);
+  animation: floatDrift var(--d, 12s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+  will-change: transform, opacity;
+}
+
+/* variation: some are sharper */
+.float-item.sharp{
+  filter: blur(10px);
+  opacity: 0.70;
+}
+
+/* animation: drift + gentle rotation */
+@keyframes floatDrift{
+  0%{
+    transform: translate3d(-50%, -50%, 0) translate3d(0px, 0px, 0) rotate(0deg);
+    opacity: 0.70;
+  }
+  50%{
+    transform: translate3d(-50%, -50%, 0) translate3d(var(--dx, 40px), var(--dy, -34px), 0) rotate(8deg);
+    opacity: 0.95;
+  }
+  100%{
+    transform: translate3d(-50%, -50%, 0) translate3d(0px, 0px, 0) rotate(0deg);
+    opacity: 0.72;
+  }
+}
+
+/* Place + personalize each element */
+.float-field .i1  { --x: 14%; --y: 22%; --s: 56px; --d: 15s; --dx: 54px; --dy: -40px; --delay: -2s; }
+.float-field .i2  { --x: 28%; --y: 68%; --s: 44px; --d: 12s; --dx: -44px; --dy: 30px;  --delay: -6s; }
+.float-field .i3  { --x: 52%; --y: 18%; --s: 70px; --d: 18s; --dx: 58px; --dy: 36px;  --delay: -9s; }
+.float-field .i4  { --x: 74%; --y: 28%; --s: 40px; --d: 11s; --dx: -36px; --dy: -28px; --delay: -3s; }
+.float-field .i5  { --x: 86%; --y: 72%; --s: 62px; --d: 16s; --dx: 46px; --dy: -34px; --delay: -7s; }
+.float-field .i6  { --x: 12%; --y: 82%; --s: 34px; --d: 10s; --dx: 30px; --dy: 26px;  --delay: -4s; }
+.float-field .i7  { --x: 40%; --y: 48%; --s: 90px; --d: 22s; --dx: -60px; --dy: 40px;  --delay: -12s; }
+.float-field .i8  { --x: 63%; --y: 78%; --s: 38px; --d: 12.5s; --dx: 40px; --dy: 22px; --delay: -5s; }
+.float-field .i9  { --x: 90%; --y: 18%; --s: 30px; --d: 10.5s; --dx: -32px; --dy: 18px; --delay: -8s; }
+.float-field .i10 { --x: 6%;  --y: 52%; --s: 78px; --d: 20s; --dx: 70px; --dy: -10px; --delay: -10s; }
+.float-field .i11 { --x: 58%; --y: 60%; --s: 46px; --d: 13s; --dx: -42px; --dy: -30px; --delay: -1s; }
+.float-field .i12 { --x: 78%; --y: 48%; --s: 84px; --d: 21s; --dx: 58px; --dy: 44px; --delay: -11s; }
+
+/* Optional: make a few sharper for depth */
+.float-field .i4,
+.float-field .i6,
+.float-field .i9{
+  filter: blur(10px);
+  opacity: 0.70;
+}
+
+/* Canvas stays above float-field so you can keep/repurpose interactions */
+#bg-canvas{
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  display: block;
+}
+
+/* Overlays above everything (but below UI which should have higher z-index in style.css) */
+.bg-overlay{
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Vignette to pull focus to center */
+.bg-overlay::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 45%,
+      rgba(0,0,0,0.06) 0%,
+      rgba(0,0,0,0.52) 65%,
+      rgba(0,0,0,0.80) 100%);
+}
+
+/* Noise layer (uses your tiling assets/img/noise.png) */
+.bg-noise{
+  opacity: var(--noise-alpha, 0.08);
+  mix-blend-mode: overlay;
+  background-image: url("../assets/img/noise.png");
+  background-repeat: repeat;
+  background-size: 220px 220px;
+  animation: noiseDrift 8s linear infinite;
+}
+
+/* Scanlines layer (pure CSS repeating gradient) */
+.bg-scanlines{
+  opacity: var(--scanline-alpha, 0.10);
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.04) 0px,
+      rgba(255,255,255,0.04) 1px,
+      rgba(0,0,0,0.00) 2px,
+      rgba(0,0,0,0.00) 4px
+    );
+  animation: scanFlicker 3.6s linear infinite;
+}
+
+@keyframes noiseDrift{
+  0% { transform: translate3d(0,0,0); }
+  100% { transform: translate3d(-80px, -60px, 0); }
+}
+
+@keyframes scanFlicker{
+  0%, 100% { opacity: calc(var(--scanline-alpha, 0.10) - 0.02); }
+  50% { opacity: calc(var(--scanline-alpha, 0.10) + 0.03); }
+}
+
+/* Reduced motion: keep the decorative motion static */
+@media (prefers-reduced-motion: reduce){
+  .float-item{ animation: none; }
+  .bg-noise{ animation: none; }
+  .bg-scanlines{ animation: none; }
+}

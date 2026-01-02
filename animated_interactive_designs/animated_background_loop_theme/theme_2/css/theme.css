@@ -1,0 +1,75 @@
+/* css/theme.css */
+/* Theme tokens (colors, fonts, radii, shadows) using CSS custom properties. */
+
+:root{
+  /* Typography (Google Fonts loaded in HTML) */
+  --font-display: "Orbitron", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  --font-ui: "Rajdhani", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+
+  /* Core background + text (slightly softer than NEURAL NEXUS) */
+  --bg-0: #05070c;
+  --bg-1: #070b14;
+  --text: #eaf2ff;
+  --muted: rgba(234, 242, 255, 0.70);
+
+  /* Accent palette (floating theme) */
+  --cyan: #2ff7ff;      /* airy teal */
+  --magenta: #ff4fd8;   /* soft neon pink */
+  --violet: #7c5cff;    /* electric violet */
+  --blue: #3aa0ff;      /* cool blue */
+  --acid: #b0ff00;      /* kept as utility accent (optional) */
+  --ember: #ff5f1f;     /* kept as utility accent (optional) */
+
+  /* Gradient accents */
+  --accent-a: var(--cyan);
+  --accent-b: var(--violet);
+  --accent-c: var(--magenta);
+
+  /* Surfaces (glass) */
+  --glass: rgba(10, 12, 18, 0.56);
+  --glass-2: rgba(6, 8, 14, 0.58);
+  --border: rgba(255, 255, 255, 0.09);
+
+  /* Radii + spacing */
+  --r-sm: 12px;
+  --r-md: 16px;
+  --r-lg: 22px;
+
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 18px;
+  --space-4: 24px;
+  --space-5: 32px;
+
+  /* Shadow + glow presets */
+  --shadow-float: 0 18px 60px rgba(0, 0, 0, 0.55);
+  --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.45);
+
+  --glow-cyan: 0 0 26px rgba(47, 247, 255, 0.14);
+  --glow-violet: 0 0 26px rgba(124, 92, 255, 0.14);
+  --glow-magenta: 0 0 26px rgba(255, 79, 216, 0.12);
+
+  /* Focus ring */
+  --focus: 0 0 0 2px rgba(47, 247, 255, 0.18);
+
+  /* Motion */
+  --t-fast: 160ms;
+  --t-med: 240ms;
+  --t-slow: 420ms;
+  --ease-out: cubic-bezier(.2,.8,.2,1);
+
+  /* Floating field tuning (used by background.css) */
+  --float-alpha: 0.22;
+  --float-blur: 18px;
+  --float-size-min: 12px;
+  --float-size-max: 64px;
+
+  /* Subtle noise + scanline strength (used by background.css) */
+  --noise-alpha: 0.08;
+  --scanline-alpha: 0.10;
+}
+
+::selection{
+  background: rgba(255, 79, 216, 0.32);
+  color: var(--text);
+}
