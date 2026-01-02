@@ -6,13 +6,13 @@
 
 [![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)]()
 [![Progress](https://img.shields.io/badge/Progress-10%2F60-red?style=for-the-badge)]()[![HTML](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white)]()
-[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]()
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]() [![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)]()
 
 </div>
 
 ## 💭 What's This About?
 
-Hey there! I'm a first-year CSE student challenging myself to create **60 unique login page designs** in about 60 days. No frameworks, no libraries—just pure HTML and CSS magic. Each day brings a new design concept, from glass morphism to cyberpunk aesthetics. This is my playground for exploring CSS creativity while building a solid portfolio piece! 🚀
+Hey there! I'm a first-year CSE student challenging myself to create **60 unique login page designs** in about 60 days. No frameworks, no libraries—just HTML, CSS, and JavaScript magic. Each day brings a new design concept, from glass morphism to cyberpunk aesthetics. This is my playground for exploring CSS creativity while building a solid portfolio piece! 🚀
 
 ---
 
@@ -211,8 +211,7 @@ Each design explores different CSS concepts and aesthetic styles:
 ### 📈 Overall Progress
 *   • **Completed**: 10 Liquid Glass designs ✅ - **Building**: 8 Animated/Interactive designs 🏗️ - **Planned**: 42 designs across 6 series - **Total**: 10/60 (16% complete) 🚀
 - **Markup**: HTML5
-- **Styling**: Pure CSS3 (No preprocessing)
-- **Features**: 
+- **Styling**: HTML, CSS3, and JavaScript (No preprocessing)- **Features**: 
   - Glass Morphism Effects
   - Smooth Animations & Transitions
   - Responsive Design Principles
@@ -248,7 +247,7 @@ Each design comes with:
 1. **Browse the designs**: Check out the `designs/liquid_glass_designs/` folder
 2. **View galleries**: Each design has a gallery folder with preview screenshots
 3. **Open the HTML files**: Right-click any `.html` file and open with your browser
-4. **Explore the code**: Pure HTML & CSS—no build process needed!
+4. **Explore the code**: HTML, CSS, aHTML, CSS, & JavaScriptHTML, CSS3, and JavaScriptnd JavaScript—no build process needed!
 
 ---
 
