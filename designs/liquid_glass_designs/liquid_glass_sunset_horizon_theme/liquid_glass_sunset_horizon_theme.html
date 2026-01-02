@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>Horizon Gate Sunset Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="liquid_glass_sunset_horizon_theme.css" />
+</head>
+<body>
+  <!-- This MUST be here for the background image -->
+  <div class="bg-layer"></div>
+
+  <header class="top-bar">
+    <div class="brand-name">
+      <span class="quote-mark">“</span>
+      <span class="quote-main">HORIZON GATE SUNSET LOGIN</span>
+      <span class="quote-sub">DRIFT INTO THE GOLDEN HOUR V2.4 • SKYLINE SYNC</span>
+    </div>
+
+    <div class="theme-toggle">
+      <span class="toggle-label">DAY / NIGHT</span>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <section class="glass-card" aria-labelledby="login-title">
+      <header class="card-header">
+        <p class="session-line">SESSION • HORIZON NODE 12</p>
+        <h1 id="login-title">Welcome back, Voyager</h1>
+        <p>
+          Sign in to your horizon account to carry progress, playlists and
+          memories across every device.
+        </p>
+      </header>
+
+      <form class="login-form" autocomplete="on" novalidate>
+        <div class="input-group field">
+          <label for="email" class="field-label">Email address</label>
+          <div class="field-inner">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@sunsetmail.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <p class="error-message hidden" id="email-error">
+            Please enter a valid email address.
+          </p>
+        </div>
+
+        <div class="input-group field password-group">
+          <label for="password" class="field-label">Password</label>
+          <div class="field-inner">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            />
+            <button
+              type="button"
+              class="toggle-password"
+              aria-label="Toggle password visibility"
+            >
+              <span class="eye-icon">
+                <span class="eye-line"></span>
+                <span class="eye-dot"></span>
+              </span>
+            </button>
+          </div>
+          <p class="error-message hidden" id="password-error">
+            Your password must be at least 8 characters.
+          </p>
+        </div>
+
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" name="remember" />
+            <span>Remember this horizon</span>
+          </label>
+
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="primary-btn">
+          <span class="button-inner">
+            <span class="btn-label">Continue to sunset ✧</span>
+            <span class="spinner" aria-hidden="true">⋆</span>
+          </span>
+        </button>
+
+        <div class="divider">
+          <span>or sign in with</span>
+        </div>
+
+        <div class="social-row">
+          <button class="social-btn" type="button" aria-label="Sign in with Google">
+            <img src="google_logo.png" alt="Google" />
+          </button>
+          <button class="social-btn" type="button" aria-label="Sign in with Meta">
+            <img src="meta_logo.png" alt="Meta" />
+          </button>
+          <button class="social-btn" type="button" aria-label="Sign in with VK">
+            <img src="vk_logo.png" alt="VK" />
+          </button>
+        </div>
+      </form>
+
+      <footer class="card-footer">
+        <span>New to Horizon Gate?</span>
+        <a href="#">Create an account</a>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    const html = document.documentElement;
+    const themeSwitch = document.getElementById("themeSwitch");
+    const passwordInput = document.getElementById("password");
+    const togglePasswordBtn = document.querySelector(".toggle-password");
+
+    // start in day (sunset) mode
+    html.setAttribute("data-theme", "light");
+
+    themeSwitch.addEventListener("change", () => {
+      const isDark = themeSwitch.checked;
+      html.setAttribute("data-theme", isDark ? "dark" : "light");
+    });
+
+    togglePasswordBtn.addEventListener("click", () => {
+      const hidden = passwordInput.type === "password";
+      passwordInput.type = hidden ? "text" : "password";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurora Glass Sign in</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      min-height:100vh;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:url("aurora_2.png") center center / cover no-repeat fixed;
+      display:flex;
+      justify-content:flex-end;
+      align-items:center;
+    }
+
+    /* pop‑in animation applied to wrapper, NOT to card */
+    @keyframes glassPopIn {
+      0% {
+        opacity:0;
+        transform:translateY(30px) scale(0.94);
+      }
+      100% {
+        opacity:1;
+        transform:translateY(0) scale(1);
+      }
+    }
+
+    .glass-wrapper {
+      margin-right:4vw;
+      animation: glassPopIn 420ms ease-out forwards;
+    }
+
+    .glass-panel {
+      width:420px;
+      max-width:90vw;
+      border-radius:28px;
+      padding:2.4rem 2.6rem 2.3rem;
+      background:
+        linear-gradient(135deg,
+          rgba(138,92,255,0.40),
+          rgba(255,120,200,0.32),
+          rgba(120,255,190,0.26)
+        ),
+        rgba(10,20,35,0.72);
+      border:1px solid rgba(255,255,255,0.75);
+      box-shadow:
+        0 26px 60px rgba(0,0,0,0.75),
+        0 0 0 1px rgba(255,255,255,0.25);
+      backdrop-filter:blur(22px);
+      -webkit-backdrop-filter:blur(22px);
+      color:#f9fbff;
+      position:relative;
+      overflow:hidden;
+      transform-origin:center center;
+      transition:
+        transform 0.28s cubic-bezier(0.15, 0.85, 0.35, 1.15),
+        box-shadow 0.28s ease-out;
+    }
+
+    /* big, clear pop‑out on hover */
+    .glass-panel:hover {
+      transform:translateY(-25px) translateX(18px) scale(1.06);
+      box-shadow:
+        0 48px 96px rgba(0,0,0,0.95),
+        0 0 0 1px rgba(255,255,255,0.35);
+    }
+
+    .glass-panel::before {
+      content:"";
+      position:absolute;
+      inset:1px;
+      border-radius:24px;
+      border:1px solid rgba(255,255,255,0.35);
+      pointer-events:none;
+    }
+
+    .auth-heading {
+      margin-bottom:1.8rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .auth-heading h1 {
+      font-size:1.9rem;
+      font-weight:700;
+      margin-bottom:0.3rem;
+      color:#ffffff;
+      text-shadow:0 6px 14px rgba(0,0,0,0.7);
+    }
+
+    .auth-heading p {
+      font-size:1rem;
+      color:rgba(226,232,240,0.9);
+    }
+
+    .field-label {
+      font-size:0.9rem;
+      text-transform:uppercase;
+      letter-spacing:0.09em;
+      color:rgba(209,213,219,0.9);
+      margin-bottom:0.25rem;
+    }
+
+    .field-wrapper {
+      margin-bottom:1.2rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .field-wrapper input {
+      width:100%;
+      border:none;
+      border-radius:999px;
+      padding:0.85rem 1.15rem;
+      font-size:1rem;
+      color:#0f172a;
+      background:rgba(255,255,255,0.96);
+      box-shadow:0 10px 22px rgba(15,23,42,0.55);
+      outline:none;
+    }
+
+    .field-wrapper input::placeholder {
+      color:#9ca3af;
+    }
+
+    .field-wrapper input:focus {
+      box-shadow:0 0 0 2px rgba(191,219,254,1), 0 10px 24px rgba(15,23,42,0.7);
+    }
+
+    .extras-row {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin:0.4rem 0 1.4rem;
+      font-size:0.92rem;
+      color:rgba(226,232,240,0.95);
+      z-index:1;
+      position:relative;
+    }
+
+    .extras-row a {
+      color:#e5f2ff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .extras-row a:hover {
+      text-decoration:underline;
+    }
+
+    .primary-actions {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      margin-bottom:1.4rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .btn-main {
+      flex:1;
+      border:none;
+      border-radius:999px;
+      padding:0.95rem 1.1rem;
+      font-size:1rem;
+      font-weight:600;
+      cursor:pointer;
+      background:linear-gradient(120deg,#22c55e,#a5f3fc);
+      color:#022c22;
+      box-shadow:0 20px 34px rgba(15,23,42,0.8);
+      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+    }
+
+    .btn-main:hover {
+      transform:translateY(-1px);
+      filter:brightness(1.04);
+      box-shadow:0 24px 40px rgba(15,23,42,0.9);
+    }
+
+    .link-secondary {
+      font-size:0.95rem;
+      color:rgba(226,232,240,0.9);
+      text-decoration:none;
+      white-space:nowrap;
+    }
+
+    .link-secondary span {
+      color:#ffffff;
+      font-weight:600;
+      margin-left:0.18rem;
+    }
+
+    .divider {
+      display:flex;
+      align-items:center;
+      gap:0.8rem;
+      font-size:0.88rem;
+      color:rgba(209,213,219,0.9);
+      margin:0.4rem 0 1rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .divider-line {
+      flex:1;
+      height:1px;
+      background:rgba(148,163,184,0.7);
+    }
+
+    .social-row {
+      display:flex;
+      gap:0.9rem;
+      margin-top:0.2rem;
+      position:relative;
+      z-index:1;
+    }
+
+    .social-btn {
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      border:1px solid rgba(248,250,252,0.9);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      background:rgba(15,23,42,0.7);
+      backdrop-filter:blur(16px);
+      -webkit-backdrop-filter:blur(16px);
+      box-shadow:0 12px 26px rgba(15,23,42,0.8);
+      transition:transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      overflow:hidden;
+    }
+
+    .social-btn:hover {
+      transform:translateY(-2px);
+      background:rgba(248,250,252,0.98);
+      box-shadow:0 16px 32px rgba(15,23,42,0.9);
+    }
+
+    .social-btn img {
+      width:100%;
+      height:100%;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .terms {
+      margin-top:1.2rem;
+      font-size:0.8rem;
+      color:rgba(203,213,225,0.95);
+      position:relative;
+      z-index:1;
+    }
+
+    .terms a {
+      color:#e5f2ff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .terms a:hover {
+      text-decoration:underline;
+    }
+
+    @media (max-width:900px) {
+      body {
+        justify-content:center;
+        align-items:flex-end;
+        padding:1.5rem 0;
+        background-attachment:scroll;
+      }
+      .glass-wrapper {
+        margin-right:0;
+      }
+      .glass-panel {
+        margin:0 1.4rem;
+        width:auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-wrapper">
+    <div class="glass-panel">
+      <div class="auth-heading">
+        <h1>Sign in</h1>
+        <p>Welcome back. Enter your details to access your account.</p>
+      </div>
+
+      <form>
+        <div class="field-wrapper">
+          <div class="field-label">Username</div>
+          <input type="text" placeholder="Your username" required />
+        </div>
+
+        <div class="field-wrapper">
+          <div class="field-label">Password</div>
+          <input type="password" placeholder="Your password" required />
+        </div>
+
+        <div class="extras-row">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="rememberMe" />
+            <label class="form-check-label" for="rememberMe">
+              Remember me
+            </label>
+          </div>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <div class="primary-actions">
+          <button type="submit" class="btn-main">Login</button>
+          <a href="#" class="link-secondary">
+            New here?<span>Sign up</span>
+          </a>
+        </div>
+
+        <div class="divider">
+          <div class="

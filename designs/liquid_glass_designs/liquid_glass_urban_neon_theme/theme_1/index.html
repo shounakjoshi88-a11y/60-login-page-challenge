@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <title>Neon Haven – Liquid Glass Login</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Liquid glass cyberpunk login screen with Neon Haven branding and social providers."
+  />
+
+  <link rel="stylesheet" href="cyber_liquid_glass.css" />
+</head>
+<body>
+  <!-- Background city -->
+  <div class="bg-layer" style="background-image: url('bg-urban-login.png');"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- Top bar with new cool text -->
+  <header class="top-bar">
+    <!-- Left brand block -->
+    <div class="brand-name">
+      <span class="quote-mark">“</span>
+      <div class="brand-text">
+        <div class="brand-row-main">
+          <span class="brand-title">NEON HAVEN</span>
+          <span class="brand-mode">SIGN IN</span>
+        </div>
+        <div class="brand-row-sub">
+          <span class="brand-tagline">INTERFACE WITH THE FUTURE</span>
+          <span class="brand-chip">V3.7 • NIGHT GRID ONLINE</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right theme toggle -->
+    <div class="theme-toggle">
+      <span class="toggle-label">DAY / NIGHT</span>
+      <label class="switch">
+        <input type="checkbox" id="themeSwitch" aria-label="Toggle theme" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="main-wrapper">
+    <section class="glass-card" aria-labelledby="login-title">
+      <!-- Decorative holo elements -->
+      <div class="holo-ring ring-left"></div>
+      <div class="holo-ring ring-right"></div>
+      <div class="scan-bar"></div>
+
+      <!-- Tiny card tag -->
+      <div class="card-tag">
+        <span class="tag-dot"></span>
+        <span class="tag-text">ACCESS • NODE: 07</span>
+      </div>
+
+      <!-- Header text -->
+      <header class="card-header">
+        <h1 id="login-title">Welcome back, Runner</h1>
+        <p>
+          Log in to your neon district account to sync progress, devices and cloud saves.
+        </p>
+      </header>
+
+      <!-- Login form -->
+      <form class="login-form" autocomplete="on" novalidate>
+        <!-- Email -->
+        <div class="input-group field">
+          <label for="email" class="field-label">Email address</label>
+          <div class="field-inner" id="email-wrapper">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              inputmode="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <p class="error-message hidden" id="email-error">
+            Please enter a valid email address.
+          </p>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group field password-group">
+          <label for="password" class="field-label">Password</label>
+          <div class="field-inner" id="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            />
+
+            <button
+              type="button"
+              class="toggle-password"
+              aria-label="Toggle password visibility"
+            >
+              <span class="eye-icon">
+                <span class="eye-line"></span>
+                <span class="eye-dot"></span>
+              </span>
+            </button>
+          </div>
+          <p class="error-message hidden" id="password-error">
+            Your password must be at least 8 characters.
+          </p>
+        </div>
+
+        <!-- Options -->
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" name="remember" />
+            <span>Remember me</span>
+          </label>
+
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+        <!-- Primary CTA -->
+        <button type="submit" class="primary-btn">
+          <span class="button-inner">
+            <span class="btn-label">Enter the district ✧</span>
+          </span>
+        </button>
+
+        <!-- Divider -->
+        <div class="divider">
+          <span>or continue with</span>
+        </div>
+
+        <!-- Social providers -->
+        <div class="social-row" aria-label="Social login options">
+          <button
+            type="button"
+            class="social-btn social-google"
+            aria-label="Continue with Google"
+          >
+            <img src="google_logo.png" alt="Google logo" />
+          </button>
+
+          <button
+            type="button"
+            class="social-btn social-meta"
+            aria-label="Continue with Meta"
+          >
+            <img src="meta_logo.png" alt="Meta logo" />
+          </button>
+
+          <button
+            type="button"
+            class="social-btn social-vk"
+            aria-label="Continue with VK"
+          >
+            <img src="vk_logo.png" alt="VK logo" />
+          </button>
+        </div>
+      </form>
+
+      <!-- Footer -->
+      <footer class="card-footer">
+        <span>New to Neon Haven?</span>
+        <a href="#">Create an account</a>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Minimal JS hooks -->
+  <script>
+    const html = document.documentElement;
+    const themeSwitch = document.getElementById('themeSwitch');
+    const passwordInput = document.getElementById('password');
+    const togglePasswordBtn = document.querySelector('.toggle-password');
+    const emailWrapper = document.getElementById('email-wrapper');
+    const passwordWrapper = document.getElementById('password-wrapper');
+    const emailInput = document.getElementById('email');
+
+    // Theme toggle
+    themeSwitch.addEventListener('change', () => {
+      const isDark = themeSwitch.checked;
+      html.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    });
+
+    // Password visibility
+    togglePasswordBtn.addEventListener('click', () => {
+      const hidden = passwordInput.type === 'password';
+      passwordInput.type = hidden ? 'text' : 'password';
+    });
+
+    // Scanner animation on focus
+    function attachScanner(input, wrapper) {
+      input.addEventListener('focus', () => {
+        wrapper.classList.add('field-active');
+      });
+      input.addEventListener('blur', () => {
+        wrapper.classList.remove('field-active');
+      });
+    }
+
+    attachScanner(emailInput, emailWrapper);
+    attachScanner(passwordInput, passwordWrapper);
+  </script>
+</body>
+</html>

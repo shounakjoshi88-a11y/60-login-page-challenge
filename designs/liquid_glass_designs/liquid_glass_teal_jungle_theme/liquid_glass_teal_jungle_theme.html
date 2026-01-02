@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Glass Login</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      min-height:100vh;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      font-size:16px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:url("login_liquid_glass.png") center center / cover no-repeat fixed;
+    }
+
+    .overlay {
+      position:fixed;
+      inset:0;
+      background:linear-gradient(to bottom, rgba(255,255,255,0.10), rgba(0,0,0,0.30));
+      z-index:0;
+    }
+
+    .login-wrapper {
+      position:relative;
+      z-index:1;
+      width:100%;
+      max-width:720px;
+      padding:22px;
+    }
+
+    .glass-card {
+      position:relative;
+      padding:3.2rem 3rem 2.8rem;
+      border-radius:28px;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.40), rgba(255,255,255,0.10)),
+        rgba(15,32,45,0.32);
+      border:1px solid rgba(255,255,255,0.65);
+      box-shadow:
+        0 22px 46px rgba(0,0,0,0.58),
+        0 0 0 1px rgba(255,255,255,0.22);
+      backdrop-filter:blur(22px);
+      -webkit-backdrop-filter:blur(22px);
+      color:#f9fbff;
+      transition:transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .glass-card:hover {
+      transform:translateY(-6px) scale(1.015);
+      box-shadow:
+        0 30px 60px rgba(0,0,0,0.68),
+        0 0 0 1px rgba(255,255,255,0.28);
+    }
+
+    .card-label {
+      position:absolute;
+      left:50%;
+      top:-24px;
+      transform:translateX(-50%);
+      padding:0.55rem 2.2rem;
+      border-radius:16px 16px 10px 10px;
+      background:rgba(248,250,252,0.98);
+      border:1px solid rgba(255,255,255,0.95);
+      color:#1b2430;
+      font-weight:600;
+      font-size:1.05rem;
+      box-shadow:0 8px 18px rgba(0,0,0,0.35);
+    }
+
+    .field-wrapper {
+      position:relative;
+      margin-bottom:1rem;
+    }
+
+    .field-wrapper input {
+      width:100%;
+      border-radius:999px;
+      border:1px solid rgba(217,230,243,0.95);
+      background:rgba(255,255,255,0.9);
+      color:#1b2430;
+      padding:0.8rem 3.2rem 0.8rem 1.2rem;
+      font-size:1rem;
+      outline:none;
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+    }
+
+    .field-wrapper input::placeholder {
+      color:rgba(107,129,150,0.95);
+    }
+
+    .field-wrapper input:focus {
+      border-color:#ffffff;
+      box-shadow:0 0 0 1px rgba(255,255,255,0.8);
+    }
+
+    .field-icon {
+      position:absolute;
+      right:1.1rem;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:1.1rem;
+      opacity:0.85;
+      color:#5a3da6;
+    }
+
+    .extras-row {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      font-size:0.98rem;
+      margin:0.5rem 0 1.1rem;
+      color:rgba(234,242,252,0.95);
+    }
+
+    .extras-row a {
+      color:#e4f0ff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .extras-row a:hover {
+      text-decoration:underline;
+    }
+
+    .btn-login-main {
+      display:block;
+      width:100%;
+      border-radius:999px;
+      border:none;
+      padding:0.9rem 1rem;
+      background:rgba(248,250,252,0.97);
+      color:#1b2430;
+      font-weight:600;
+      font-size:1rem;
+      box-shadow:0 18px 30px rgba(0,0,0,0.48);
+      transition:transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .btn-login-main:hover {
+      transform:translateY(-1px);
+      background:#ffffff;
+      box-shadow:0 22px 36px rgba(0,0,0,0.58);
+    }
+
+    .bottom-text {
+      margin-top:1rem;
+      text-align:center;
+      font-size:0.95rem;
+      color:rgba(231,239,248,0.9);
+    }
+
+    .bottom-text a {
+      color:#ffffff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .bottom-text a:hover {
+      text-decoration:underline;
+    }
+
+    .social-divider {
+      margin:1.2rem 0 0.5rem;
+      text-align:center;
+      font-size:0.9rem;
+      color:rgba(231,239,248,0.85);
+      position:relative;
+    }
+
+    .social-divider::before,
+    .social-divider::after {
+      content:"";
+      position:absolute;
+      top:50%;
+      width:26%;
+      height:1px;
+      background:rgba(231,239,248,0.4);
+    }
+
+    .social-divider::before { left:0; }
+    .social-divider::after  { right:0; }
+
+    .social-row {
+      display:flex;
+      justify-content:center;
+      gap:1rem;
+      margin-top:0.4rem;
+    }
+
+    .social-btn {
+      width:52px;
+      height:52px;
+      border-radius:50%;
+      border:1px solid rgba(255,255,255,0.85);
+      background:rgba(8,20,30,0.6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      box-shadow:0 10px 22px rgba(0,0,0,0.55);
+      transition:transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      padding:0;
+      overflow:hidden;
+    }
+
+    .social-btn:hover {
+      transform:translateY(-2px);
+      background:rgba(255,255,255,0.96);
+      box-shadow:0 14px 28px rgba(0,0,0,0.65);
+    }
+
+    .social-btn img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
+    }
+
+    .social-btn.google { border-color:#fbbc05; }
+    .social-btn.meta   { border-color:#1877f2; }
+    .social-btn.vk     { border-color:#4c75a3; }
+
+    .icon-user::before { content:"\1F464"; }
+    .icon-lock::before { content:"\1F512"; }
+
+    @media (max-width:576px) {
+      .login-wrapper { max-width:100%; padding:16px; }
+      .glass-card {
+        padding:2.6rem 1.6rem 2.3rem;
+        border-radius:22px;
+      }
+      .card-label {
+        padding:0.5rem 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="login-wrapper">
+    <div class="glass-card">
+      <div class="card-label">Login</div>
+
+      <form>
+        <div class="field-wrapper">
+          <input type="text" placeholder="Username" required />
+          <span class="field-icon icon-user"></span>
+        </div>
+
+        <div class="field-wrapper">
+          <input type="password" placeholder="Password" required />
+          <span class="field-icon icon-lock"></span>
+        </div>
+
+        <div class="extras-row">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="rememberMe" />
+            <label class="form-check-label" for="rememberMe">
+              Remember me
+            </label>
+          </div>
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn-login-main">
+          Login
+        </button>
+
+        <div class="bottom-text">
+          Don’t have an account?
+          <a href="#">Register</a>
+        </div>
+
+        <div class="social-divider">
+          <span>or continue with</span>
+        </div>
+
+        <div class="social-row">
+          <button type="button" class="social-btn google">
+            <img src="google_logo.png" alt="Google" />
+          </button>
+          <button type="button" class="social-btn meta">
+            <img src="meta_logo.png" alt="Meta" />
+          </button>
+          <button type="button" class="social-btn vk">
+            <img src="vk_logo.png" alt="VK" />
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

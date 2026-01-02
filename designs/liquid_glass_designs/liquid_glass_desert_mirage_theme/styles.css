@@ -1,0 +1,773 @@
+/* ---------- Base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.16);
+    --glass-border: rgba(255, 255, 255, 0.45);
+    --accent: #26c6da;     /* mirage cyan */
+    --accent-2: #ff8a65;   /* desert coral */
+    --text-main: #2b2621;
+    --text-soft: #7a6f63;
+}
+
+body {
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--text-main);
+    background: #000;
+    overflow: hidden;
+    /* Background fade-in */
+    animation: fadeIn 0.8s ease;
+}
+
+/* ---------- Background image ---------- */
+.page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* DAYTIME background by default */
+    background: url("bg-mirage-day.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.background-illustration {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+/* overlays for depth and contrast */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(0, 0, 0, 0.25), transparent 55%),
+        radial-gradient(circle at 80% 90%, rgba(255, 183, 77, 0.18), transparent 60%);
+    pointer-events: none;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 50%, rgba(0, 0, 0, 0.18), transparent 55%);
+    pointer-events: none;
+}
+
+/* ---------- Hero quote ---------- */
+.hero-quote {
+    position: absolute;
+    left: 5vw;
+    top: 11vh;
+    max-width: 420px;
+    color: #fffdf4;
+    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+    -webkit-font-smoothing: antialiased;
+    font-smooth: antialiased;
+}
+
+.hero-line {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.03em;
+    line-height: 1.35;
+    font-family: "Georgia", "Times New Roman", serif;
+    position: relative;
+}
+
+/* soft highlight underline behind part of the quote */
+.hero-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+    width: 55%;
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(255, 183, 77, 0.6), rgba(38, 198, 218, 0.0));
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.hero-sub {
+    margin-top: 0.9rem;
+    font-size: 0.95rem;
+    color: rgba(255, 248, 225, 0.9);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* ---------- Login zone ---------- */
+.login-zone {
+    position: relative;
+    width: 36vw;
+    min-width: 320px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vw 0 1vw;
+    z-index: 2;
+}
+
+/* ---------- Glassmorphism card ---------- */
+.login-card {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 2.7rem 2.3rem 2.2rem;
+    border-radius: 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow:
+        0 20px 55px rgba(139, 98, 60, 0.45),
+        0 0 0 1px rgba(255, 255, 255, 0.24);
+    overflow: hidden;
+    transform: translateY(0) scale(1);
+    transition:
+        transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+        background 0.4s ease;
+    /* Page entrance animation */
+    animation: slideInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Pulsing card glow animation */
+@keyframes cardPulse {
+    0%, 100% {
+        box-shadow:
+            0 22px 60px rgba(255, 171, 64, 0.26),
+            0 0 30px rgba(38, 198, 218, 0.18);
+    }
+    50% {
+        box-shadow:
+            0 24px 78px rgba(255, 171, 64, 0.4),
+            0 0 52px rgba(38, 198, 218, 0.3);
+    }
+}
+
+/* hover pop + glow */
+.login-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    background: rgba(255, 255, 255, 0.2);
+    animation: cardPulse 1.8s ease-in-out infinite;
+}
+
+/* highlight streak */
+.login-card::before {
+    content: "";
+    position: absolute;
+    inset: -45%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.5),
+        transparent 40%
+    );
+    transform: translateX(-65%) rotate(14deg);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+.login-card:hover::before {
+    opacity: 1;
+}
+
+/* ---------- Header ---------- */
+.card-header {
+    margin-bottom: 1.1rem;
+    text-align: left;
+}
+
+.card-header h1 {
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    background: linear-gradient(120deg, #4e342e, #ffb74d, #26c6da);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: text-shadow 0.25s ease, transform 0.25s ease;
+}
+
+/* subtle title hover */
+.login-card:hover .card-header h1 {
+    text-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    transform: translateY(-1px);
+}
+
+.card-header p {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    color: var(--text-soft);
+}
+
+/* ---------- Theme toggle ---------- */
+.theme-toggle {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--text-soft);
+}
+
+.theme-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+/* slider pill */
+.theme-switch .slider {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+    transition: background 0.25s ease;
+}
+
+/* knob */
+.theme-switch .slider::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff8e1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease;
+}
+
+/* checked (dark mode) */
+.theme-switch input:checked + .slider {
+    background: linear-gradient(135deg, #263238, #000000);
+}
+
+.theme-switch input:checked + .slider::before {
+    transform: translateX(20px);
+}
+
+.theme-label {
+    color: var(--text-soft);
+}
+
+/* ---------- Input fields ---------- */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.field {
+    position: relative;
+}
+
+/* global input transition (extra) */
+input {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.field input {
+    width: 100%;
+    padding: 1.05rem 0.9rem 0.85rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.75);
+    font-size: 0.95rem;
+    color: var(--text-main);
+    outline: none;
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        transform 0.15s ease;
+}
+
+.field input::placeholder {
+    color: transparent;
+}
+
+.field label {
+    position: absolute;
+    left: 0.9rem;
+    top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+/* floating label */
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label {
+    top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--accent);
+}
+
+/* focus line */
+.focus-line {
+    position: absolute;
+    left: 0.9rem;
+    right: 0.9rem;
+    bottom: 0.55rem;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.field input:focus ~ .focus-line {
+    transform: scaleX(1);
+}
+
+/* mirage glow on focus */
+.field input:focus {
+    border-color: #26c6da;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow:
+        0 0 15px rgba(38, 198, 218, 0.55),
+        inset 0 0 10px rgba(255, 224, 178, 0.5);
+    transform: translateY(-1px);
+}
+
+/* extra focus animation */
+input:focus {
+    transform: scale(1.02);
+    box-shadow: inset 0 0 0 2px #4db8d6;
+}
+
+/* validity styles */
+.input-group {
+    position: relative;
+}
+
+input:valid {
+    border-color: #4db8d6;
+    background: linear-gradient(to right, #fff 0%, #f0f8ff 100%);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #ff6b6b;
+}
+
+/* validation icon */
+.validation-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+input:valid ~ .validation-icon::before {
+    content: "✓";
+    color: #4db8d6;
+}
+
+input:invalid:not(:placeholder-shown) ~ .validation-icon::before {
+    content: "✗";
+    color: #ff6b6b;
+}
+
+/* error message row under inputs */
+.error-row {
+    margin-top: 0.25rem;
+    min-height: 0.9rem;
+}
+
+.error-message {
+    font-size: 0.78rem;
+    color: #ff6b6b;
+    line-height: 1.2;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ---------- Password group ---------- */
+.password-input-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: opacity 0.2s;
+}
+
+.toggle-password:hover {
+    opacity: 0.7;
+}
+
+/* ---------- Meta row ---------- */
+.meta-row {
+    margin: 0.35rem 0 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.remember {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    color: var(--text-soft);
+}
+
+.remember input {
+    display: none;
+}
+
+/* checkbox micro-animation */
+input[type="checkbox"] {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.15);
+}
+
+input[type="checkbox"]:checked {
+    animation: checkPulse 0.3s ease;
+}
+
+@keyframes checkPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* checkbox visual */
+.custom-check {
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    transition:
+        all 0.25s ease,
+        transform 0.12s ease;
+}
+
+.remember input:checked + .custom-check {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    border-color: transparent;
+    box-shadow: 0 0 8px rgba(255, 171, 64, 0.7);
+    transform: scale(1.05);
+}
+
+.remember input:checked + .custom-check::after {
+    content: "✓";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+/* ---------- Links ---------- */
+.link {
+    color: var(--accent-2);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* generic link hover underline */
+a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff8b7b;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.link:hover {
+    color: var(--accent);
+    text-shadow: 0 0 8px rgba(255, 183, 77, 0.6);
+}
+
+/* ---------- Button ---------- */
+.btn-primary {
+    margin-top: 0.35rem;
+    width: 100%;
+    padding: 0.95rem 1.3rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: radial-gradient(circle at 0% 0%, #ffffff, #ffe0b2 38%, #ff8a65);
+    color: #3e2723;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    box-shadow: 0 14px 30px rgba(193, 123, 56, 0.6);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.02) translateY(-2px);
+    box-shadow:
+        0 18px 40px rgba(193, 123, 56, 0.75),
+        0 0 28px rgba(38, 198, 218, 0.3);
+    filter: brightness(1.05);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* extra button hover (login-button alias) */
+.login-button {
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* loading / spinner */
+.button-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.spinner {
+    display: inline-block;
+    animation: spin 1s linear infinite;
+    font-size: 0.95rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.button-text.hidden,
+.spinner.hidden {
+    display: none;
+}
+
+/* success state */
+.login-button.success {
+    background: linear-gradient(135deg, #4db8d6, #7fb069);
+}
+
+.login-button.success::after {
+    content: '✓';
+    margin-left: 0.25rem;
+    animation: successCheck 0.5s ease;
+}
+
+@keyframes successCheck {
+    0% { transform: scale(0) rotate(-45deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+/* ---------- Social login ---------- */
+.social-login {
+    margin-top: 1.3rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-soft);
+}
+
+.social-login p {
+    margin-bottom: 0.6rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.social-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.9);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(120, 88, 52, 0.4);
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease,
+        border-color 0.18s ease;
+}
+
+/* extra hover */
+.social-btn {
+    transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.social-btn.google {
+    border-color: rgba(234, 67, 53, 0.45);
+}
+
+.social-btn.meta {
+    border-color: rgba(24, 119, 242, 0.5);
+}
+
+.social-btn.vk {
+    border-color: rgba(76, 117, 163, 0.5);
+}
+
+/* ---------- Footer ---------- */
+.card-footer {
+    margin-top: 1.1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.45rem;
+    font-size: 0.82rem;
+    color: var(--text-soft);
+}
+
+/* ---------- Animations ---------- */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+    .page {
+        justify-content: center;
+        align-items: center;
+        background-position: center top;
+        padding: 1.5rem 0;
+    }
+
+    .login-zone {
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .login-card {
+        max-width: 420px;
+        margin-top: 0;
+    }
+
+    .social-buttons {
+        gap: 0.7rem;
+    }
+
+    .hero-quote {
+        top: 6vh;
+        left: 6vw;
+        max-width: 260px;
+        text-shadow: 0 3px 10px rgba(0, 0, 0, 0.55);
+    }
+
+    .hero-line {
+        font-size: 1.4rem;
+    }
+
+    .hero-line::after {
+        height: 6px;
+        width: 65%;
+    }
+
+    .hero-sub {
+        font-size: 0.85rem;
+        margin-top: 0.7rem;
+    }
+}
+
+/* ---------- Dark mode variant (driven by data-theme) ---------- */
+html[data-theme="dark"] body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+
+/* NIGHT background image in dark mode */
+html[data-theme="dark"] .page {
+    background: url("bg-mirage-night.png") center/cover no-repeat;
+}
+
+html[data-theme="dark"] .login-card {
+    background: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+}
+
+html[data-theme="dark"] .field input {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+html[data-theme="dark"] .field input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
