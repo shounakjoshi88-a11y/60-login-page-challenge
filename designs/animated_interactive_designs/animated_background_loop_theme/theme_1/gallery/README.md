@@ -1,197 +1,205 @@
-# Gallery - Animated Background Loop Theme
+# NEURAL NEXUS — Animated Background Loop Theme
 
-## Overview
-This gallery folder contains visual demonstrations and showcase materials for the **Animated Background Loop Theme** login page design. It includes video demos, preview images, and resources to help understand the theme's aesthetic and functionality.
+A **cyberpunk-styled interactive login page** featuring a looping video background, animated particle field, and dynamic neon UI. Built with pure HTML, CSS, and vanilla JavaScript.
 
-## Contents
+## 🎬 Live Preview
 
-### 📹 demo.mp4
-- **Purpose**: Full-length video demonstration of the theme in action
-- **Format**: MP4 video file
-- **Duration**: Complete walkthrough of the login interface
-- **Shows**: 
-  - Smooth animated background transitions
-  - Interactive form elements
-  - Responsive behavior
-  - Hover effects and animations
+> **Interactive Demo** — Move your mouse to repel particles. Watch the glitch title animate. Experience the cyberpunk aesthetic.
 
-### 🖼️ demo.png
-- **Purpose**: Static preview screenshot of the theme
-- **Format**: PNG image
-- **Usage**: Quick visual reference without needing to play the video
-- **Content**: Main login interface with animated background
+[![Interactive Demo Video](https://img.shields.io/badge/Watch-Interactive%20Demo-blue?style=for-the-badge&logo=github)](gallery/demo.mp4)
 
-## Design Highlights
+> **▶️ Click the badge above to watch the interactive demo video in loop**
 
-### Visual Elements
-- **Animated Background**: Continuous looping background animation
-- **Modern Layout**: Clean and contemporary design approach
-- **Interactive Components**: Smooth transitions and hover effects
-- **Responsive Design**: Adapts seamlessly to different screen sizes
+Or view it directly: [Demo Video](gallery/demo.mp4)
 
-### Technical Features
-- Pure HTML5 for markup
-- CSS3 for styling and animations
-- JavaScript for interactivity
-- Canvas-based background animations
-- Optimized media files
+![NEURAL NEXUS Login Page Screenshot](gallery/demo.png)
+## ✨ Key Features
 
-## How to Use These Files
+### Visual Design
+- **Fullscreen looping video background** — Cyan pyramid beam with grid architecture
+- **Interactive particle field** — 140 animated particles with mouse repulsion physics
+- **Dynamic connection lines** — Links between nearby particles that brighten near cursor
+- **Neon UI elements** — Cyan/magenta color scheme with glowing effects
+- **Cinema overlays** — Scanlines + grain texture for cinematic feel
+- **Glitch typography** — Animated title with digital distortion effect
+- **Glass morphism card** — Semi-transparent form with backdrop blur + neon frame
+- **Cyberpunk quote** — Animated text in top-left corner with pulsing glow
 
-1. **View the Video Demo**: Open `demo.mp4` to see the theme in action
-2. **Quick Preview**: Check `demo.png` for a static screenshot
-3. **Experience Live**: Navigate to the parent folder and open `index.html` in a browser
+### Interactivity
+- 🖱️ **Mouse-repelled particles** — Particles push away from cursor (160px radius)
+- 🔗 **Dynamic linking** — Lines strengthen and brighten near mouse movement
+- ⚡ **Pulse effects** — Click anywhere to trigger particle burst animation
+- ⌨️ **Form validation** — Native HTML5 validation with cyberpunk status messages
+- 💫 **Hover animations** — Button glow, input underline animation, link effects
+- 📱 **Responsive design** — Works on mobile, tablet, desktop
 
-## Theme Structure Reference
+### Performance & Accessibility
+- **Optimized canvas rendering** — Transparent canvas shows video, no overdraw
+- **HiDPI support** — Sharp rendering on high-density displays
+- **Reduced motion support** — Respects `prefers-reduced-motion` media query
+- **Semantic HTML** — Proper ARIA labels and semantic structure
+- **Color contrast** — WCAG AA compliant contrast ratios
+
+## 📁 Project Structure
 
 ```
-theme_1/
-├── index.html          # Main login page
-├── css/               # Stylesheets
-│   ├── style.css      # Main styles
-│   ├── theme.css      # Theme-specific styles
-│   ├── background.css # Background animations
-│   └── quote.css      # Quote section styles
-├── js/                # JavaScript files
-│   ├── main.js        # Main functionality
-│   ├── bg-canvas.js   # Background animation logic
-│   └── utils.js       # Utility functions
-├── assets/            # Static assets
-│   ├── img/          # Images (noise, patterns)
-│   ├── video/        # Video backgrounds
-│   └── favicon/      # Favicon files
-└── gallery/          # This folder
-    ├── demo.mp4      # Video demonstration
-    ├── demo.png      # Preview screenshot
-    └── README.md     # This file
+animated_background_loop_theme/
+├── index.html              # Main login page
+├── README.md              # This file
+├── css/
+│   ├── theme.css          # Design tokens & variables
+│   ├── background.css     # Video + canvas + overlay layers
+│   ├── quote.css          # Top-left quote styling
+│   └── style.css          # Login card + form + button
+├── js/
+│   ├── bg-canvas.js       # Particle field animation loop (requestAnimationFrame)
+│   └── main.js            # Form validation + UI interactions
+├── assets/
+│   ├── img/
+│   │   └── noise.png      # Grain texture overlay
+│   ├── video/
+│   │   └── bg-loop.mp4    # Cyan pyramid looping background video
+│   └── favicon/
+│       └── favicon.svg    # Neon circuit shield icon
+└── gallery/
+    └── demo.mp4           # Interactive demo video
 ```
 
-## Key Features
+## 🚀 Quick Start
 
-### 🎨 Design
-- Unique animated background loop
-- Professional color scheme
-- Typography-focused layout
-- Smooth visual hierarchy
+### Option 1: Local Development
+1. Clone or download this theme folder
+2. Open in **VS Code** with Live Server extension
+3. Click "Go Live" to start the development server
+4. Navigate to `http://localhost:5500`
 
-### ⚡ Performance
-- Optimized CSS animations
-- Efficient JavaScript execution
-- Compressed media files
-- Minimal dependencies
+### Option 2: Direct HTML
+1. Download all files
+2. Open `index.html` directly in your browser
+3. Works immediately (no build tools needed)
 
-### 📱 Responsiveness
-- Mobile-friendly layout
-- Tablet optimization
-- Desktop enhancement
-- Touch-friendly interface
+## 🎨 Customization
 
-## Browser Compatibility
-- Chrome/Chromium (Latest)
-- Firefox (Latest)
-- Safari (Latest)
-- Edge (Latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## Getting Started
-
-### Quick Start
-1. Navigate to the parent directory (`animated_background_loop_theme/theme_1/`)
-2. Open `index.html` in your web browser
-3. Interact with the login form
-4. Observe the animated background effects
-
-### Local Development
-```bash
-# Clone the repository
-git clone https://github.com/shounakjoshi88-a11y/60-login-page-challenge.git
-
-# Navigate to theme folder
-cd designs/animated_interactive_designs/animated_background_loop_theme/theme_1
-
-# Open in browser
-open index.html  # macOS
-# or
-start index.html # Windows
-# or use a live server
-python -m http.server 8000
+### Change the Title
+Edit `index.html` around line 103:
+```html
+<h1 class="glitch" data-text="NEXUS LOGIN">NEXUS LOGIN</h1>
 ```
 
-## Color Palette
-The theme features a sophisticated color palette with:
-- Primary background colors
-- Accent colors for interactive elements
-- Subtle gradients and overlays
-- High contrast for readability
+### Change the Quote
+Edit `index.html` around line 110:
+```html
+<p class="quote-text">"Your custom quote here"</p>
+```
 
-## Animation Specifications
-- **Background Loop**: Continuous, seamless animation
-- **Transition Speed**: Optimized for visual impact
-- **Frame Rate**: Smooth 60fps performance
-- **Effects**: Fade, slide, and transform animations
+### Customize Colors
+Edit `css/theme.css` `:root` variables:
+```css
+--cyan: #00ffff;        /* Primary accent */
+--magenta: #ff0080;     /* Secondary accent */
+--text: #eaf2ff;        /* Text color */
+--bg-0: #05060a;        /* Dark background */
+```
 
-## Assets Information
+### Adjust Particle Behavior
+Edit `js/bg-canvas.js` line ~18 (CONFIG object):
+```js
+CONFIG = {
+  density: 0.00008,              // Particles per pixel (increase = more)
+  maxParticles: 140,             // Cap on particle count
+  particleMinR: 1.2,             // Particle size range (min)
+  particleMaxR: 2.8,             // Particle size range (max)
+  particleAlpha: 1.0,            // Brightness (0-1)
+  baseSpeed: 0.28,               // Movement speed
+  linkDist: 135,                 // Connection distance
+  linkAlpha: 0.35,               // Line brightness (0-1)
+  mouseRadius: 160,              // Repulsion radius
+  mouseForce: 1.35,              // Repulsion strength
+  magnetForce: 0.22,             // Slight attraction to cursor (0 = off)
+}
+```
 
-### Images
-- Noise textures for depth
-- Pattern overlays
-- Favicon in multiple formats
+## 🎬 Background Video
 
-### Videos
-- Background loop video (MP4 format)
-- Optimized for web playback
-- Auto-playing with loop enabled
+The video (`assets/video/bg-loop.mp4`) is:
+- **Duration:** 4-6 seconds looping
+- **Format:** MP4 H.264 codec, AAC audio
+- **Resolution:** 1920×1080
+- **Size:** ~600KB (optimized for web)
 
-## Customization Guide
+**To use your own video:**
+1. Export as MP4 (H.264, AAC audio)
+2. Keep under 1MB for fast loading
+3. Replace `assets/video/bg-loop.mp4`
+4. Update the video filter in `css/background.css` if needed
 
-### Modify Colors
-- Edit `css/theme.css` for color variables
-- Update CSS custom properties (--primary, --accent, etc.)
+## 🔧 Technical Details
 
-### Adjust Animations
-- Modify animation duration in `css/background.css`
-- Adjust timing functions for different effects
-- Change animation keyframes as needed
+### Canvas Particle System
+- **Physics:** Friction-based movement with random drift
+- **Interaction:** Distance-based quadratic repulsion (smoother than linear)
+- **Rendering:** Transparent canvas with particle halos + highlights
+- **Performance:** ~140 particles @ 60fps on modern devices
+- **Loop Driver:** `requestAnimationFrame` for smooth 60fps animation
 
-### Change Fonts
-- Update font imports in `css/style.css`
-- Modify font families for headings and body text
+### Animation Timings
+- **Quote glow:** 4s sine wave pulse
+- **Scanlines flicker:** 3.6s subtle opacity change
+- **Glitch title:** 2.4s / 1.9s staggered clip animations
+- **Button hover:** 160ms easing
+- **Input focus:** 220ms cubic-bezier animation
 
-## Performance Tips
+### Browser Support
+- ✅ Chrome/Edge 90+
+- ✅ Firefox 88+
+- ✅ Safari 14+
+- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
-1. **Use Hardware Acceleration**: CSS transforms trigger GPU acceleration
-2. **Optimize Images**: Keep image files as small as possible
-3. **Lazy Load Videos**: Load videos only when needed
-4. **Minimize JavaScript**: Remove unused code
-5. **Cache Assets**: Leverage browser caching for repeated visits
+**Notes:**
+- Video autoplay requires `muted` attribute (browser policy)
+- Canvas rendering uses `requestAnimationFrame` for optimal timing
+- Backdrop blur falls back to solid glass on older browsers
 
-## Credits & Attribution
-- **Design**: Shonak Joshi
-- **Framework**: Pure HTML, CSS, JavaScript
-- **Part of**: 60 Login Page Challenge
+## ♿ Accessibility
 
-## Links
+- ✅ Semantic HTML (`<main>`, `<section>`, `<aside>`)
+- ✅ ARIA labels on interactive regions
+- ✅ Reduced motion support (respects user preferences)
+- ✅ Color contrast > 4.5:1 (WCAG AA)
+- ✅ Form validation with descriptive error messages
+- ✅ Keyboard navigation support
 
-- 📂 [Parent Folder](../)
-- 🎨 [Theme 1 Index](../index.html)
-- 📚 [Main Challenge Repository](https://github.com/shounakjoshi88-a11y/60-login-page-challenge)
-- 👤 [Developer Profile](https://github.com/shounakjoshi88-a11y)
+## 📊 File Sizes
 
-## Version History
+| File | Size | Type |
+|------|------|------|
+| index.html | ~2.5 KB | HTML |
+| style.css | ~6 KB | CSS |
+| background.css | ~3 KB | CSS |
+| theme.css | ~1.5 KB | CSS |
+| quote.css | ~1 KB | CSS |
+| bg-canvas.js | ~8 KB | JavaScript |
+| main.js | ~2.5 KB | JavaScript |
+| bg-loop.mp4 | ~600 KB | Video |
+| noise.png | ~5 KB | PNG |
+| **Total** | **~630 KB** | - |
 
-- **v1.0** (Current): Initial release with animated background loop
-- Features: Smooth animations, responsive design, interactive elements
+## 🎓 Learning Resources
 
-## Notes for Future Development
+This project demonstrates:
+- **Canvas API** — particle animation and physics simulation
+- **CSS Animations** — keyframes, transitions, filters
+- **JavaScript ES6** — arrow functions, template literals, event listeners
+- **Responsive Design** — mobile-first, media queries
+- **Web Standards** — semantic HTML, accessibility, performance
 
-- Consider adding more animation variations
-- Implement theme switching capabilities
-- Add accessibility improvements (ARIA labels)
-- Create mobile-specific optimizations
-- Add form validation enhancements
+## 📝 License
+
+Part of the [60-day login page design challenge](https://github.com/shounakjoshi88-a11y/60-login-page-challenge).
 
 ---
 
-**Created as part of the 60 Login Page Design Challenge**
-
-*Last Updated: January 2, 2026*
+**Created by:** [@shounakjoshi88-a11y](https://github.com/shounakjoshi88-a11y)  
+**Theme:** Cyberpunk Animated Background Loop  
+**Date:** January 2025  
+**Status:** ✅ Complete & Production-Ready
