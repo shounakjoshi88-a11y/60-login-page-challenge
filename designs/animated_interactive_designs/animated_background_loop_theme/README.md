@@ -6,11 +6,11 @@ A **cyberpunk-styled interactive login page** featuring a looping video backgrou
 
 > **Interactive Demo** — Move your mouse to repel particles. Watch the glitch title animate. Experience the cyberpunk aesthetic.
 
-<video width="100%" height="auto" controls autoplay loop muted>
-  <source src="gallery/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Interactive Demo Video](https://img.shields.io/badge/Watch-Interactive%20Demo-blue?style=for-the-badge&logo=github)](gallery/demo.mp4)
 
+> **▶️ Click the badge above to watch the interactive demo video in loop**
+
+Or view it directly: [Demo Video](gallery/demo.mp4)
 ## ✨ Key Features
 
 ### Visual Design
