@@ -29,7 +29,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 ## 📊 Current Progress
 
 | Metric | Status |
-|--------|--------|
+|--------|---------|
 | **Total Designs** | 12 / 60 (20%) |
 | **Series Completed** | 2 |
 | **Designs in Pipeline** | 48 |
