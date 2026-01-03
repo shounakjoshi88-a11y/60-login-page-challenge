@@ -122,10 +122,8 @@ Each design is a showcase of different CSS techniques, animation principles, and
 ├── LICENSE
 └── .gitignore
 ```
-```
 
 ---
-
 ## 🎯 Progress Tracker
 
 ### 🌌 **Liquid Glass Series** ✅ (10/10 Complete)
@@ -143,11 +141,11 @@ Each design is a showcase of different CSS techniques, animation principles, and
 | 7 | Ocean Deep 🌊 | ✅ Complete | Dec 20 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_ocean_deep_theme/gallery) |
 | 8 | Sunset Horizon 🌅 | ✅ Complete | Dec 20 | 1 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_sunset_horizon_theme/gallery) |
 | 9 | Urban Neon 🌃 | ✅ Complete | Dec 20 | 2 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme) |
-
+---
 ### ✨ **Animated & Interactive Series** ✅ (2/8 Complete)
 
 *Dynamic designs with smooth animations, particle systems, and interactive elements*
-
+---
 | # | Design | Features | Status | Date Created | # of Versions | Gallery Link |
 |---|---------|---------|---------|--------------|----------|-------------|
 | 1 | Animated Background Loop 🌊 | Video background, smooth animations | ✅ Complete | Jan 02 | 2 | [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_1/gallery) [View](https://github.com/shounakjoshi88-a11y/60-login-page-challenge/blob/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_2/gallery)|
@@ -158,7 +156,7 @@ Each design is a showcase of different CSS techniques, animation principles, and
 | 6 | Morphing Shapes 🎭 | SVG transformations | 📝 Coming Soon | TBD | - | - |
 | 7 | Particle Effects ✨ | Dynamic backgrounds | 📝 Coming Soon | TBD | - | - |
 | 8 | Slide Animations 📩 | Smooth slide-in effects | 📝 Coming Soon | TBD | - | - |
-
+---
 ### 🏗️ **Upcoming Series** (Ready to Build)
 
 - 🧊 **Neumorphism** - Soft, sculptural design with subtle depth
