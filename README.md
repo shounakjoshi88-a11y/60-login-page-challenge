@@ -26,6 +26,24 @@ Each design is a showcase of different CSS techniques, animation principles, and
 
 ---
 
+### 🖼️ Design Showcase
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme/theme_2/gallery/theme-2-day.png" width="48%" alt="Urban Neon Theme - Day"/>
+<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme/theme_2/gallery/theme-2-night.png" width="48%" alt="Urban Neon Theme - Night"/>
+
+<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery/Screenshot%252525-12-19%2520122849.png" width="48%" alt="Desert Mirage Theme 1"/>
+<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery/Screenshot%252525-12-19%2520122906.png" width="48%" alt="Desert Mirage Theme 2"/>
+
+<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme/light-mode.png" width="48%" alt="Minimalist Serene - Light Mode"/>
+<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme/dark-mode.png" width="48%" alt="Minimalist Serene - Dark Mode"/>
+
+<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_1/gallery/demo.png" width="48%" alt="Animated Background Loop - Theme 1"/>
+<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_2/gallery/demo.png" width="48%" alt="Animated Background Loop - Theme 2"/>
+
+</div>
+
 ## 📊 Current Progress
 
 | Metric | Status |
@@ -357,7 +375,7 @@ Every design includes:
 
 - 🎓 First-Year CSE Student @ RCOEM
 - 🌍 Nagpur, India
-- 💻 Full-Stack Web Developer
+- 💻 Learing Full-Stack Web Development
 - 🎨 UI/UX Design Enthusiast
 - 🚀 Self-Directed Learner
 
@@ -382,7 +400,7 @@ Every design includes:
 
 ## 📝 Notes & Future Plans
 
-- ✅ Complete all 8 Animated & Interactive designs
+- ✅ Complete all 10 Liquid Glass designs
 - 📝 Build remaining design series
 - 🎯 Maintain code quality & documentation standards
 - 🚀 Showcase best designs in professional portfolio
