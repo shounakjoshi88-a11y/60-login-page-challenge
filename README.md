@@ -34,16 +34,6 @@ Each design is a showcase of different CSS techniques, animation principles, and
 |![Desert Mirage 1](https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery/Screenshot%202025-12-19%20122849.png)|![Desert Mirage 2](https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery/Screenshot%202025-12-19%20122906.png)|
 |![Minimalist Light](https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme/light-mode.png)|![Minimalist Dark](https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme/dark-mode.png)|
 |![Animated 1](https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_1/gallery/demo.png)|![Animated 2](https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_2/gallery/demo.png)|challenge/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme/theme_2/gallery/theme-2-day.png" width="48%" alt="Urban Neon Theme - Day"/>
-<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_urban_neon_theme/theme_2/gallery/theme-2-night.png" width="48%" alt="Urban Neon Theme - Night"/>
-
-<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery/Screenshot%252525-12-19%2520122849.png" width="48%" alt="Desert Mirage Theme 1"/>
-<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_desert_mirage_theme/gallery/Screenshot%252525-12-19%2520122906.png" width="48%" alt="Desert Mirage Theme 2"/>
-
-<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme/light-mode.png" width="48%" alt="Minimalist Serene - Light Mode"/>
-<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/liquid_glass_designs/liquid_glass_minimalist_serene_theme/dark-mode.png" width="48%" alt="Minimalist Serene - Dark Mode"/>
-
-<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_1/gallery/demo.png" width="48%" alt="Animated Background Loop - Theme 1"/>
-<img src="https://raw.githubusercontent.com/shounakjoshi88-a11y/60-login-page-challenge/main/designs/animated_interactive_designs/animated_background_loop_theme/theme_2/gallery/demo.png" width="48%" alt="Animated Background Loop - Theme 2"/>
 
 </div>
 
